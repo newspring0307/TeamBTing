@@ -116,7 +116,7 @@
         <div class="res desc"></div>
        
       </div>
-      <hr> 
+      <hr>  
    
 
       <hr>

@@ -1202,7 +1202,7 @@
           <h4 class="ui inverted header">ting Info</h4>
           <ul class="fh5co-contact-info">
 						<li class="fh5co-contact-address " >
-						< i class="icon-home" ></i>&nbsp;부천시 소사구 심곡본동</li>
+						<i class="icon-home" ></i>&nbsp;부천시 소사구 심곡본동</li>
 						<li><i class="icon-phone"></i>&nbsp;(123) 456-789</li>
 						<li><i class="icon-envelope"></i>&nbsp;ting_manager@gmail.com</li>
 			</ul>

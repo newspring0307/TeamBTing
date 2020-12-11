@@ -1270,7 +1270,7 @@
 </div>
 <!---------------------------------- Footer end ---------------------------------->
 
- 
+  
 	<!---------------------------------script----------------------------------------------->
 	<script src="resources/js/jquery.min.js"></script>
 	<script src="resources/js/jquery.easing.1.3.js"></script>

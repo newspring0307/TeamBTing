@@ -17,7 +17,6 @@
 			<link rel="stylesheet" href="resources/css/bootstrap.css">
 			<link rel="stylesheet" href="resources/css/style.css">
 			<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
-			<link href="https://assets.moredates.com/theme/moredates/styles.min.css?v=1606817545" rel="stylesheet">
 			<!-- 이부분을 지우면 header 이 정상으로돌아옴 그대신 infoCenter의 css가 안먹힘 -->
 
 			<script src="resources/js/modernizr-2.6.2.min.js"></script>
@@ -48,16 +47,16 @@
 	<header style="background: linear-gradient(-135deg, #52D3AA, #54FFFF) fixed;">
 			<div class="container">
 			   <div class="navbar-header">
-		         <a class="navbar-brand" href="index.jsp" style="color:#1C1185">ting</a> 
+		         <a class="navbar-brand" href="index" style="color:#1C1185">ting</a> 
 		       </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="index.jsp" data-nav-section="about"><span>팅이란?</span></a></li>
-		            <li><a href="Main_company_1_team.do" data-nav-section="team"><span>team</span></a></li>
-		            <li><a href="Tingtoday_0_main.do" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
-		            <li><a href="Premium_0_main.do" data-nav-section="premium"><span>프리미엄</span></a></li>
-		            <li><a href="Fun_0_main.do" data-nav-section="fun"><span>FUN</span></a></li>
-		            <li><a href="Client_2_Ting_main.do" data-nav-section="contact"><span>문의</span></a></li>
+		            <li class="active"><a href="index" data-nav-section="about"><span>팅이란?</span></a></li>
+		            <li><a href="Main_company_1_team" data-nav-section="team"><span>team</span></a></li>
+		            <li><a href="Tingtoday_0_main" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
+		            <li><a href="Premium_0_main" data-nav-section="premium"><span>프리미엄</span></a></li>
+		            <li><a href="Fun_0_main" data-nav-section="fun"><span>FUN</span></a></li>
+		            <li><a href="Client_2_Ting_main" data-nav-section="contact"><span>문의</span></a></li>
 					<li><button class="ui inverted teal button" id="login">로그인</button></li>
 					<li><button class="ui inverted teal button" id="register">회원가입</button></li>
 			      </ul>
@@ -67,13 +66,13 @@
 <!---------------------------------- header end ---------------------------------->
 <!--여기에 내용 넣으세요-->
 
-	<div>
 			<div id="mainContainer" class="container">
 				<div class="twoColumn">
 					<section class="mainCol">
 					<br><br>
 					<!-- 나의 프리미엄 -->
 				<div class="infoCenter"> 
+				<!--  
 					<h1>인기글 tingToday TOP</h1><br>
 					<ul class="notifications count-3">
 
@@ -93,7 +92,7 @@
 					<a class="notification" href="#" >
 							<br><br><br><br><h2 style="color:white">♥하♥하♥</h2></a></li>
 
-					</ul>
+					</ul>-->
 				</div>
 
 <!----------------------------------------------------------------------------------------->
@@ -227,13 +226,15 @@
 					<td>123&nbsp;♥</td>
 					<td>hoony</td>
 					<td>2020.12.01</td>
-					<td>312</td>
+					<td>312</td> 
 				</tr>	
 
 			
 			</tbody>
 		</table>			
 		<button class="ui teal button">글쓰기</button>
+	</div>
+	</div>
 	</div>
 <!--게시판 테이블-->
 			
@@ -295,25 +296,25 @@
 
    <div class="ui inverted vertical footer segment" style="background: linear-gradient(-135deg, #52D3AA, #54FFFF) fixed;">
     <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
+     <div class="ui stackable inverted divided equal height stackable grid">
         <div class="three wide column">
           <h4 class="ui inverted header">company</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">ting Team</a>
-            <a href="#" class="item">ting이란?</a>
-            <a href="#" class="item">premium</a>
-            <a href="#" class="item">문의하기</a>
+            <a href="Main_company_1_team" class="item">ting Team</a>
+            <a href="index" class="item">ting이란?</a>
+            <a href="Premium_0_main" class="item">premium</a>
+            <a href="Client_2_Ting_main" class="item">문의하기</a>
           </div>
         </div>
         <div class="three wide column">
           <h4 class="ui inverted header">Services</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">ting Today</a>
-            <a href="#" class="item">MBTI</a>
-            <a href="#" class="item">연애테스트</a>
-            <a href="#" class="item">이상형테스트</a>
+            <a href="Tingtoday_0_main" class="item">ting Today</a>
+            <a href="FUN_1_mbti_1_my" class="item">MBTI</a>
+            <a href="FUN_2_test1" class="item">연애테스트</a>
+            <a href="FUN_2_test2" class="item">이상형테스트</a>
           </div>
-        </div>
+        </div>        
 
         <div class="seven wide column">
           <h4 class="ui inverted header">ting Info</h4>
@@ -322,10 +323,10 @@
 						<i class="icon-home" ></i>&nbsp;부천시 소사구 심곡본동</li>
 						<li><i class="icon-phone"></i>&nbsp;(123) 456-789</li>
 						<li><i class="icon-envelope"></i>&nbsp;ting_manager@gmail.com</li>
-			</ul>
-        </div>
-      </div>
-    </div>
+			</ul> 
+        </div> 
+      </div> 
+    </div> 
   </div>
 </div>
 <!---------------------------------- Footer end ---------------------------------->

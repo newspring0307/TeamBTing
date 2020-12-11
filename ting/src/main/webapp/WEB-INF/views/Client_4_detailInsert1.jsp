@@ -35,16 +35,16 @@
    <header style="background: linear-gradient(-135deg, #52D3AA, #54FFFF) fixed;">
 		   <div class="container">
 			  <div class="navbar-header">
-				<a class="navbar-brand" href="index.do" style="color:#1C1185">ting</a> 
+				<a class="navbar-brand" href="index" style="color:#1C1185">ting</a> 
 			  </div>
 			   <div id="navbar" class="navbar-collapse collapse">
 				 <ul class="nav navbar-nav navbar-right">
-				   <li class="active"><a href="index.do" data-nav-section="about"><span>팅이란?</span></a></li>
-		            <li><a href="Main_company_1_team.do" data-nav-section="team"><span>team</span></a></li>
-		            <li><a href="Tingtoday_0_main.do" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
-		            <li><a href="Premium_0_main.do" data-nav-section="premium"><span>프리미엄</span></a></li>
-		            <li><a href="Fun_0_main.do" data-nav-section="fun"><span>FUN</span></a></li>
-		            <li><a href="Client_2_Ting_main.do" data-nav-section="contact"><span>문의</span></a></li>
+				   <li class="active"><a href="index" data-nav-section="about"><span>팅이란?</span></a></li>
+		            <li><a href="Main_company_1_team" data-nav-section="team"><span>team</span></a></li>
+		            <li><a href="Tingtoday_0_main" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
+		            <li><a href="Premium_0_main" data-nav-section="premium"><span>프리미엄</span></a></li>
+		            <li><a href="Fun_0_main" data-nav-section="fun"><span>FUN</span></a></li>
+		            <li><a href="Client_2_Ting_main" data-nav-section="contact"><span>문의</span></a></li>
 					<li><button class="ui inverted teal button" id="login">로그인</button></li>
 					<li><button class="ui inverted teal button" id="register">회원가입</button></li>
 				 </ul>
@@ -232,7 +232,7 @@
 		   <h2>프로필 작성을 완료하셨습니다</h2>
 	   </div>
 	   <div class="col-md-05 section-heading text-center">
-		<form method="POST" action="insertClientDetailInfo.do">
+		<form method="POST" action="insertClientDetailInfo">
 			<input type="hidden" name="name" id="name" value="">
 			<input type="hidden" name="nickname" id="nickname" value="">
 			<input type="hidden" name="gender" id="gender" value="">
@@ -246,6 +246,8 @@
 			<input type="hidden" name="bodyShape" id="bodyShape" value="">
 			<input type="hidden" name="drink" id="drink" value="">
 			<input type="hidden" name="smoke" id="smoke" value="">
+			<input type="hidden" name="latitude" id="latitude" value="">
+			<input type="hidden" name="longitude" id="longitude" value="">
 			<button class="btn btn-primary" type="submit" >저장</button>
 	   </form>
 	   </div>
@@ -259,7 +261,17 @@
    $(document).ready(function() {
 	   $("button").click(function() {
 		   $(this).parent().parent().hide().next().show();
-	   }); 
+	   });
+	// Geolocation API에 액세스할 수 있는지를 확인
+	   if (navigator.geolocation) {
+            //위치 정보를 얻기
+            navigator.geolocation.getCurrentPosition (function(pos) {
+                $('#latitude').val(pos.coords.latitude);     // 위도
+                $('#longitude').val(pos.coords.longitude); // 경도
+            });
+        } else {
+            alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.")
+        }
    });
    </script>
    <script type="text/javascript">

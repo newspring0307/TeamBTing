@@ -11,8 +11,9 @@ public class ClientDetailInfoVO {
 	private String job;
 	private int age;
 	private String salary;
-	private String residence;
-	private String residencePoint;
+
+	private String latitude;
+	private String longitude;
 	private String religion;
 	private String education;
 	private int height;
@@ -58,24 +59,25 @@ public class ClientDetailInfoVO {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public String getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+	public String getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
 	public String getSalary() {
 		return salary;
 	}
 	public void setSalary(String salary) {
 		this.salary = salary;
 	}
-	public String getResidence() {
-		return residence;
-	}
-	public void setResidence(String residence) {
-		this.residence = residence;
-	}
-	public String getResidencePoint() {
-		return residencePoint;
-	}
-	public void setResidencePoint(String residencePoint) {
-		this.residencePoint = residencePoint;
-	}
+
 	public String getReligion() {
 		return religion;
 	}

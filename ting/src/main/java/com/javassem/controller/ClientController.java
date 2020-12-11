@@ -21,7 +21,7 @@ public class ClientController {
 		return "index";
 	}
 	
-	@RequestMapping("/{step}.do")
+	@RequestMapping("/{step}")
 	public String viewPage(@PathVariable String step) {
 		return step;
 	}

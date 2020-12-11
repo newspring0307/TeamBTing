@@ -52,11 +52,11 @@
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="index.jsp" data-nav-section="about"><span>팅이란?</span></a></li>
-		            <li><a href="Main_company_1_team.do" data-nav-section="team"><span>team</span></a></li>
-		            <li><a href="Tingtoday_0_main.do" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
-		            <li><a href="Premium_0_main.do" data-nav-section="premium"><span>프리미엄</span></a></li>
-		            <li><a href="Fun_0_main.do" data-nav-section="fun"><span>FUN</span></a></li>
-		            <li><a href="Client_2_Ting_main.do" data-nav-section="contact"><span>문의</span></a></li>
+		            <li><a href="Main_company_1_team" data-nav-section="team"><span>team</span></a></li>
+		            <li><a href="Tingtoday_0_main" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
+		            <li><a href="Premium_0_main" data-nav-section="premium"><span>프리미엄</span></a></li>
+		            <li><a href="Fun_0_main" data-nav-section="fun"><span>FUN</span></a></li>
+		            <li><a href="Client_2_Ting_main" data-nav-section="contact"><span>문의</span></a></li>
 					<li><button class="ui inverted teal button" id="login">로그인</button></li>
 					<li><button class="ui inverted teal button" id="register">회원가입</button></li>
 			      </ul>
@@ -296,25 +296,25 @@
 
    <div class="ui inverted vertical footer segment" style="background: linear-gradient(-135deg, #52D3AA, #54FFFF) fixed;">
     <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
+     <div class="ui stackable inverted divided equal height stackable grid">
         <div class="three wide column">
           <h4 class="ui inverted header">company</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">ting Team</a>
-            <a href="#" class="item">ting이란?</a>
-            <a href="#" class="item">premium</a>
-            <a href="#" class="item">문의하기</a>
+            <a href="Main_company_1_team" class="item">ting Team</a>
+            <a href="index.jsp" class="item">ting이란?</a>
+            <a href="Premium_0_main" class="item">premium</a>
+            <a href="Client_2_Ting_main" class="item">문의하기</a>
           </div>
         </div>
         <div class="three wide column">
           <h4 class="ui inverted header">Services</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">ting Today</a>
-            <a href="#" class="item">MBTI</a>
-            <a href="#" class="item">연애테스트</a>
-            <a href="#" class="item">이상형테스트</a>
+            <a href="Tingtoday_0_main" class="item">ting Today</a>
+            <a href="FUN_1_mbti_1_my" class="item">MBTI</a>
+            <a href="FUN_2_test1" class="item">연애테스트</a>
+            <a href="FUN_2_test2" class="item">이상형테스트</a>
           </div>
-        </div>
+        </div>        
 
         <div class="seven wide column">
           <h4 class="ui inverted header">ting Info</h4>

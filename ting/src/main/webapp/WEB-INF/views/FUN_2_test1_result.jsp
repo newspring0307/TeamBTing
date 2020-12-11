@@ -1207,7 +1207,7 @@
 						<li><i class="icon-envelope"></i>&nbsp;ting_manager@gmail.com</li>
 			</ul>
         </div>
-      </div>   
+      </div>    
     </div>
   </div>
 </div>

@@ -16,7 +16,7 @@ public class ClientController {
 	
 	@RequestMapping("/insertClientDetailInfo.do")
 	public String insertClientDetailInfo(ClientDetailInfoVO vo) {
-		System.out.println("일단실행된다치자");
+		System.out.println("�씪�떒�떎�뻾�맂�떎移섏옄");
 		clientDetailInfoService.insertClientDetailInfo(vo);
 		return "index";
 	}

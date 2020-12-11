@@ -6,11 +6,9 @@
 	<head>
 
 		<title>ting</title>
-
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta http-equiv = "Content-Type" content="text/html; charset=utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-
 			<link rel="stylesheet" href="resources/css/animate.css">
 			<link rel="stylesheet" href="resources/css/simple-line-icons.css">
 			<link rel="stylesheet" href="resources/css/magnific-popup.css">
@@ -24,9 +22,7 @@
 			  crossorigin="anonymous"></script>
 			<script src="resources/js/semantic.min.js"></script>
 			<!-- 커밋 테스트 -->
-
 	</head>
-
 	<body>
 	<header role="banner" id="fh5co-header" >
 			<div class="container">
@@ -38,17 +34,14 @@
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="index.jsp" data-nav-section="about"><span>팅이란?</span></a></li>
-		            <li><a href="Main_company_1_team.do" data-nav-section="team"><span>team</span></a></li>
-		            <li><a href="Tingtoday_0_main.do" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
-		            <li><a href="Premium_0_main.do" data-nav-section="premium"><span>프리미엄</span></a></li>
-		            <li><a href="Fun_0_main.do" data-nav-section="fun"><span>FUN</span></a></li>
-		            <li><a href="Client_2_Ting_main.do" data-nav-section="contact"><span>문의</span></a></li>
+		            <li><a href="Main_company_1_team" data-nav-section="team"><span>team</span></a></li>
+		            <li><a href="Tingtoday_0_main" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
+		            <li><a href="Premium_0_main" data-nav-section="premium"><span>프리미엄</span></a></li>
+		            <li><a href="Fun_0_main" data-nav-section="fun"><span>FUN</span></a></li>
+		            <li><a href="Client_2_Ting_main" data-nav-section="contact"><span>문의</span></a></li>
 					<li><button class="ui inverted teal button" id="login">로그인</button></li>
 					<li><button class="ui inverted teal button" id="register">회원가입</button></li>
 			       </ul>
-				
-		           	
-		 
 		        </div>
 			    </nav>
 		  </div>
@@ -63,7 +56,7 @@
 						<div class="col-md-8 col-md-offset-2" >
 							<h1 class="to-animate"  >매일 이상형이 찾아오다</h1>
 							<h2 class="to-animate">ting</h2><br>
-							<a href="Client_2_Ting_main.do" class="btn btn-primary"><h2 style="color:gray">선생님 검토 임시 마이페이지</h2></a>
+							<a href="Premium_0_main_Test" class="btn btn-primary"><h2 style="color:gray">선생님 검토 임시 마이페이지</h2></a>
 						</div>
 					</div>
 				</div>
@@ -71,9 +64,6 @@
 		</div>
 		<div class="slant"></div>
 	</section>
-
-	
-
 	<section id="fh5co-intro">
 		<div class="container">
 			<div class="row row-bottom-padded-lg">
@@ -84,7 +74,7 @@
 						<i class="fh5co-intro-icon icon-speedometer"></i>
 						<h2>매일 오전 10시!</h2>
 						<p>내 이상형이 매일 추천된다면?<p>내 이상형에 맞게<p> 랜덤으로 찾아와요!</p>
-						<p><a href="Main_login_0.do" class="btn btn-primary">ting 하러가기</a></p>
+						<p><a href="Main_login_0" class="btn btn-primary">ting 하러가기</a></p>
 						<!-- 나중에 로그인 여부에 따라 바꿀 것임 -->
 					</div>
 				</div>
@@ -96,7 +86,7 @@
 						<i class="fh5co-intro-icon icon-shield"></i>
 						<h2>소중한 내정보!</h2>
 						<p>ting은 팅피플의 소중한 개인정보를<p>아무에게나함부로 보여주지 않아요!<p>내가 선택한 사람에게만 보여줘요!</p>
-						<p><a href="Main_login_0.do" class="btn btn-primary">ting 하러가기</a></p>
+						<p><a href="Main_login_0" class="btn btn-primary">ting 하러가기</a></p>
 					</div>
 				</div>
 
@@ -109,7 +99,7 @@
 						<h2>ting만 믿어요</h2>
 						<!-- <p>용기가 없어요.<p>불필요한 감정 소모 싫어요.<p>모든 건 ting이 할테니<p>선택만 해요! </p> -->
 						<p>ting은 최적의 이상형 알고리즘을 통해 당신에게 가장 적합한 이성을 매칭해드립니다. <p>ting에게 맡기고 운명의 그사람과 마주하세요.이제 행복해질 시간이에요.</p>
-						<p><a href="Main_login_0.do" class="btn btn-primary">ting 하러가기</a></p>
+						<p><a href="Main_login_0 " class="btn btn-primary">ting 하러가기</a></p>
 					</div>
 				</div>
 
@@ -247,7 +237,7 @@
 
 			<div class="row">
 				<div class="col-md-12 text-center to-animate">
-					<p><a href="Main_company_1_team.do" target="_blank"><h2>더 자세히 알고싶으시다면 !<h2></a></p>
+					<p><a href="Main_company_1_team " target="_blank"><h2>더 자세히 알고싶으시다면 !<h2></a></p>
 				</div>
 			</div>
 		</div>
@@ -325,7 +315,7 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h1>기본 프리미엄 혜택 : ting card <span style="color:blue;">DOUBLE!</span></h1>
-							<p><h3><a href="Premium_0_main.do">구매하러가기</a></h3></p>
+							<p><h3><a href="Premium_0_main ">구매하러가기</a></h3></p>
 						</div>
 					</div>
 				</div>
@@ -453,10 +443,8 @@
 						<li><i class="icon-globe"></i> <a href="#">ting.co</a></li>
 					</ul>
 				</div>
-
 				<div class="col-md-6 to-animate" >
 					<h3 >문의</h3>
-		
 					<div class="form-group " >
 						<label for="name" class="sr-only">Name</label>
 						<input id="name" class="form-control" placeholder="이름" type="text" >
@@ -476,15 +464,11 @@
 					<div class="form-group ">
 						<input class="btn btn-primary btn-lg" value="문의 보내기" type="submit" id="send_ask" >
 					</div>
-	
 					<div>
 				</div>
-
 			</div>
 		</div>
 			</section>
-	
-	
 	<footer id="footer" role="contentinfo">
 		<a href="#" class="gotop js-gotop">To<i class="icon-arrow-up2">Top</i></a>
 		<br><br>
@@ -492,16 +476,11 @@
 			<div class="">
 				<div class="col-md-12 text-center">
 					<p>&copy; ting </p>
-					
 				</div>
 			</div>
 			<br><br>
-			
 		</div>
 	</footer>
-	
-
-
 	<!---------------------------------script----------------------------------------------->
 	<script src="resources/js/jquery.min.js"></script>
 	<script src="resources/js/jquery.easing.1.3.js"></script>
@@ -514,7 +493,6 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="resources/js/google_map.js"></script>
 	<script src="resources/js/main.js"></script>
-
 	</body>
 </html>
 

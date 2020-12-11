@@ -17,7 +17,6 @@
 			<link rel="stylesheet" href="resources/css/bootstrap.css">
 			<link rel="stylesheet" href="resources/css/style.css">
 			<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
-			<link href="https://assets.moredates.com/theme/moredates/styles.min.css?v=1606817545" rel="stylesheet">
 			<!-- 이부분을 지우면 header 이 정상으로돌아옴 그대신 infoCenter의 css가 안먹힘 -->
 
 			<script src="resources/js/modernizr-2.6.2.min.js"></script>
@@ -67,13 +66,13 @@
 <!---------------------------------- header end ---------------------------------->
 <!--여기에 내용 넣으세요-->
 
-	<div>
 			<div id="mainContainer" class="container">
 				<div class="twoColumn">
 					<section class="mainCol">
 					<br><br>
 					<!-- 나의 프리미엄 -->
 				<div class="infoCenter"> 
+				<!--  
 					<h1>인기글 tingToday TOP</h1><br>
 					<ul class="notifications count-3">
 
@@ -93,7 +92,7 @@
 					<a class="notification" href="#" >
 							<br><br><br><br><h2 style="color:white">♥하♥하♥</h2></a></li>
 
-					</ul>
+					</ul>-->
 				</div>
 
 <!----------------------------------------------------------------------------------------->
@@ -234,6 +233,8 @@
 			</tbody>
 		</table>			
 		<button class="ui teal button">글쓰기</button>
+	</div>
+	</div>
 	</div>
 <!--게시판 테이블-->
 			

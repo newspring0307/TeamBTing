@@ -18,11 +18,10 @@
     <link rel="stylesheet" type="text/css" href="resources/css/site.css">
     <link rel="stylesheet" type="text/css" href="resources/css/container.css">
     <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/header.css">
     <link rel="stylesheet" type="text/css" href="resources/css/input.css">
     <link rel="stylesheet" type="text/css" href="resources/css/segment.css">
     <link rel="stylesheet" href="resources/css/signin.css" >
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="resources/js/modernizr-2.6.2.min.js"></script>
 
 	<!--semantic-->
 	<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
@@ -34,18 +33,7 @@
 	<script src="resources/js/form.js"></script>
 	<script src="resources/js/transition.js"></script>
 	<!---------------------------------function----------------------------------------------->
-<script>
-$(document).ready(function(){ 
 
-	$('.ui fluid large teal submit button').click(function(){
-		location.href='Main_login_0.do';
-		
-	});
-	//submit 함수는 따로 추가
-
-
-});//ready end
-</script>
 	</head>
 
 	<body class="text-center">
@@ -58,7 +46,7 @@ $(document).ready(function(){
 		
 <!--===============interlock ajax 추가 삽입필요=================-->
 
- <form class="ui large form">
+ <form class="ui large form" method="post" action="Client_4_detailInsertStart">
       <div class="ui stacked segment">
         <div class="field">
             <input type="email" name="email" placeholder="이메일">
@@ -80,7 +68,7 @@ $(document).ready(function(){
 	   </div>
     
         <div class="field">
-           <div class="ui fluid large teal submit button" a href="Main_login_0.do">회원가입 !</div>
+           <button class="ui fluid large teal submit button" >회원가입 !</button>
 		<!--===============submit은 함수사용=================-->
       </div>
 	</div>

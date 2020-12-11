@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ClientDetailInfoDAO">
+
+	<insert id="insertClientDetailInfo" parameterType="clientDetailInfo">
+		<![CDATA[
+		INSERT INTO clientDetailInfo(clientIdx, name, nickname,gender,
+		job,age,salary,residence,religion,education,height,bodyShape,
+		drink,smoke)
+		VALUES(clientDetailInfo_SEQ.nextval,
+			#{name},#{nickname},#{gender},#{job},
+			#{age},#{salary},#{residence},#{religion},#{education},#{height}
+			,#{bodyShape},#{drink},#{smoke})
+		]]>
+	</insert>
+	
+	
+</mapper>

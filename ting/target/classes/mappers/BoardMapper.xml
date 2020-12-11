@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BoardDAO">
+
+	
+	<select id="getmyqnaList" resultType="board">
+		<![CDATA[
+		select regdate dat, title, content, board_id  from board_shop where  client_id=#{client_id}
+		]]>
+		</select>
+	
+	<insert id="insertBoard" parameterType="board">
+		<![CDATA[
+		insert into board_shop(board_id,title,client_id,content,regdate,cnt) values(qna_id_seq.nextval,#{title},#{client_id},#{content},sysdate,qna_cnt_seq.nextval)
+		]]>
+	</insert>
+	
+	<update id="updateBoard" parameterType="board">
+		<![CDATA[
+		UPDATE BOARD SET
+		TITLE = #{title},
+		CONTENT = #{content}
+		WHERE SEQ = #{seq}
+		]]>
+	</update>
+	
+	<delete id="deleteBoard" parameterType="board">
+		<![CDATA[
+		DELETE board_shop
+		WHERE board_id = #{board_id}
+		]]>
+	</delete>
+	
+	<select id="getBoard" parameterType="board" resultType="board">
+		<![CDATA[
+		SELECT *
+		FROM BOARD
+		WHERE SEQ = #{seq}
+		]]>
+	</select>
+	
+	<select id="getBoardList" resultType="board">
+		<![CDATA[
+		SELECT *
+		FROM BOARD_SHOP
+		
+		]]>
+	</select>
+</mapper>

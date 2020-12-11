@@ -139,7 +139,7 @@
             <a href="FUN_2_test1" class="item">연애테스트</a>
             <a href="FUN_2_test2" class="item">이상형테스트</a>
           </div>
-        </div>   
+        </div>    
 
         <div class="seven wide column">
           <h4 class="ui inverted header">ting Info</h4>

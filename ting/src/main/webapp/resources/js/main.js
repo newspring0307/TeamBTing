@@ -7,22 +7,22 @@
 	$('#navbar span').click(function(){
 		var menu=$(this).text();
 		if(menu=="팅이란?"){
-			location.href='Main_company_0.do';
+			location.href='Main_company_0';
 		}
 		if(menu=="Team"){
-			location.href='Main_company_1_team.do';
+			location.href='Main_company_1_team';
 		}
 		if(menu=="팅투하자!"){
-			location.href='Tingtoday_0_main.do';
+			location.href='Tingtoday_0_main';
 		}
 		if(menu=="프리미엄"){
-			location.href='Premium_0_main.do';
+			location.href='Premium_0_main';
 		}
 		if(menu=="FUN"){
-			location.href='Fun_0_main.do';
+			location.href='Fun_0_main';
 		}
 		if(menu=="문의"){
-			location.href='Ask_0_main.do';
+			location.href='Ask_0_main';
 		}
 	});
 
@@ -31,22 +31,22 @@
 	$('.item').click(function(){
 		var menu=$(this).text();
 		if(menu=="ting이란?"){
-			location.href='Main_company_0.do';
+			location.href='Main_company_0';
 		}
 		if(menu=="ting Team"){
-			location.href='Main_company_1_team.do';
+			location.href='Main_company_1_team';
 		}
 		if(menu=="ting Today"){
-			location.href='Tingtoday_0_main.do';
+			location.href='Tingtoday_0_main';
 		}
 		if(menu=="premium"){
-			location.href='Premium_0_main.do';
+			location.href='Premium_0_main';
 		}
 		if(menu=="문의하기"){
-			location.href='Ask_0_main.do';
+			location.href='Ask_0_main';
 		}
 		if(menu=="MBTI"||menu=="연애테스트"||menu=="이상형테스트"){
-			location.href='Fun_0_main.do';
+			location.href='Fun_0_main';
 		}
 
 	});
@@ -55,52 +55,52 @@
 
 	//약관동의
 	$('#submit_register_agree').click(function(){
-		location.href='Main_register_2_membership.do';
+		location.href='Main_register_2_membership';
 		//submit
 	});
 
 	//회원가입정보
 	$('#register_success').click(function(){
-		location.href='Main_login_0.do';
+		location.href='Main_login_0';
 		alert("회원가입이 완료되었습니다.");
 		//submit
 	});
 
 	//(비번)메일 주소
 	$('#send_pwmail').click(function(){
-		location.href='Main_login_1_PW_certifi.do';
+		location.href='Main_login_1_PW_certifi';
 		//submit
 	});
 
 	//메일인증번호
 	$('#certfi_num').click(function(){
-		location.href='Main_login_1_PW_reset.do';
+		location.href='Main_login_1_PW_reset';
 		//submit
 	});
 
 	//(잊어버린)비번변경
 	$('#pw_reset').click(function(){
-		location.href='Main_login_0.do';
+		location.href='Main_login_0';
 		alert("비밀번호가 정상적으로 변경되었습니다.");
 		//submit
 	});
 
 	//프로필 수정
 	$('#profile_save').click(function(){
-		location.href='Client_0_main.do';
+		location.href='Client_0_main ';
 		alert("프로필이 정상적으로 변경되었습니다.");
 		//submit
 	});
 
 	//마이페이지 pw재설정위한 인증
 	$('#go_pwreset').click(function(){
-		location.href='Client_1_info_PWreset2.do';
+		location.href='Client_1_info_PWreset2';
 		//인증여부
 	});
 
 	//마이페이지 pw변경
 	$('#mypage_pwreset_save').click(function(){
-		location.href='Client_0_main.do';
+		location.href='Client_0_main';
 		alert("비밀번호가 정상적으로 변경되었습니다.");
 	});
 
@@ -108,7 +108,7 @@
 	$('#send_ask').click(function(){
 		//마이페이지로 이동하시겠습니까 추가
 		//로그인부분 고려
-		location.href='Client_1_ask_list.do';
+		location.href='Client_1_ask_list';
 		alert("문의가 정상적으로 등록되었습니다.");
 	});
 
@@ -117,31 +117,31 @@
 	
 
 	$('#register').click(function(){
-		location.href='Main_register_0.do';
+		location.href='Main_register_0';
 	});
 
 	$('#register_1').click(function(){
-		location.href='Main_register_1_agree.do';
+		location.href='Main_register_1_agree ';
 	});
 
 	$('#login').click(function(){
-		location.href='Main_login_0.do';
+		location.href='Main_login_0';
 	});
 
 	$('#go_tingtoday').click(function(){
-		location.href='Tingtoday_0_main.do';
+		location.href='Tingtoday_0_main';
 	});
 
 	$('#go_mypage').click(function(){
-		location.href='Client_0_main.do';
+		location.href='Client_0_main';
 	});
 
 	$('.goFun').click(function(){
-		location.href='Fun_0_main.do';
+		location.href='Fun_0_main';
 	});
 
 	$('.go_premium').click(function(){
-		location.href='Premium_0_main.do';
+		location.href='Premium_0_main';
 	});
 
 	

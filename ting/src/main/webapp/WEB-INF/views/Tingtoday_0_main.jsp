@@ -226,7 +226,7 @@
 					<td>123&nbsp;¢¾</td>
 					<td>hoony</td>
 					<td>2020.12.01</td>
-					<td>312</td>
+					<td>312</td> 
 				</tr>	
 
 			

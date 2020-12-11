@@ -266,7 +266,7 @@
           <h4 class="ui inverted header">Services</h4>
           <div class="ui inverted link list">
             <a href="Tingtoday_0_main" class="item">ting Today</a>
-            <a href="FUN_1_mbti_1_my" class="item">MBTI</a>
+            <a href="FUN_1_mbti_1_my" class="item">MBTI</a> 
             <a href="FUN_2_test1" class="item">연애테스트</a>
             <a href="FUN_2_test2" class="item">이상형테스트</a>
           </div>

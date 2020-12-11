@@ -1247,7 +1247,7 @@
         </div>
         <div class="three wide column">
           <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
+          <div class="ui inverted link list"> 
             <a href="Tingtoday_0_main" class="item">ting Today</a>
             <a href="FUN_1_mbti_1_my" class="item">MBTI</a>
             <a href="FUN_2_test1" class="item">연애테스트</a>

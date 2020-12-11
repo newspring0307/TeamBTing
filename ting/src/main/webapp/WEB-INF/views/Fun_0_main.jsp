@@ -130,7 +130,7 @@
             <a href="Premium_0_main" class="item">premium</a>
             <a href="Client_2_Ting_main" class="item">문의하기</a>
           </div>
-        </div>
+        </div> 
         <div class="three wide column">
           <h4 class="ui inverted header">Services</h4>
           <div class="ui inverted link list">

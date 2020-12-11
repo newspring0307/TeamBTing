@@ -324,7 +324,7 @@
 						<li><i class="icon-phone"></i>&nbsp;(123) 456-789</li>
 						<li><i class="icon-envelope"></i>&nbsp;ting_manager@gmail.com</li>
 			</ul>
-        </div>
+        </div> 
       </div>
     </div>
   </div>

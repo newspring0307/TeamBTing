@@ -45,7 +45,7 @@
 					<li><button class="ui inverted teal button" id="register">회원가입</button></li>
 			      </ul>
 		        </div>
-		    </div>    
+		    </div>     
 	</header>
 	<!---------------------------------- header end ---------------------------------->
 

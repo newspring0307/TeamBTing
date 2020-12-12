@@ -88,13 +88,14 @@
 				
 				
 				<!-- 나의프로필 -->
+				<form action="Client_0_main.do" method="post">
+				
 				<section class="profilePage account">
 					<h2 class="h1">나의 프로필</h2>
 					<div class="box profileHeader">
 						<article class="profileInfo">
 							<a href="#" class="imgWrp" style="background-color: #D8D8D8 "
-								target="_blank" data-index="0"><img
-								src="" alt=""></a>
+								target="_blank" data-index="0"><img src="resources/css/asd.j" alt=""></a>
 							<div class="intro">
 								<div class="form whiteForm username">
 									<div class="field input">
@@ -102,6 +103,22 @@
 											type="text" name="name" id="editUserNameInput" placeholder="본인이름"
 											value="">
 									</div>
+									
+									<div class="field input">
+										<label for="editUserNameInput1">닉네임</label><input
+											type="text" name="nicname" id="editUserNameInput1" placeholder="닉네임"
+											value="">
+									</div>
+									
+									<div class="block" style="padding-right: 40px">
+												<div class="wrp"><label for="editUserNameInput1">성별</label>
+													<select name="gender"><option value="선택">선택</option>
+														<option value="여">여</option>
+														<option value="남">남</option></select>
+												</div>
+											</div>
+									
+									
 									<div class="field text">
 										<label for="changeProfileEmail">이메일</label><input type="email"
 											name="email" id="changeProfileEmail" value=""
@@ -278,38 +295,15 @@
 						</header>
 						
 						<div class="grid cols-1 cols-m-2 form whiteForm factForm">
-							<div class="field select single lookingfor">
-								<label for="factFormField-Looking for">찾는 것</label>
-								<div class="wrp">
-									<select id="factFormField-Looking for" name="lookingFor"><option
-											value="0">답장 없음</option>
-										<option value="1">여성들</option>
-										<option value="2">남성들</option>
-										<option value="3">아무나</option></select>
-								</div>
-							</div>
-							<div class="field select single relationshipstatus">
-								<label for="factFormField-Relationship status">관심사</label>
-								<div class="wrp">
-									<select id="factFormField-Relationship status"
-										name="relationship"><option value="0">답장 없음</option>
-										<option value="1">데이트</option>
-										<option value="2">플러팅</option>
-										<option value="3">채팅</option>
-										<option value="4">우정</option>
-										<option value="5">지인</option></select>
-								</div>
-							</div>
-							
 							<div class="field select single relationshipstatus">
 								<label for="factFormField-Relationship status">관계 상태</label>
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
-										name="relationship"><option value="0">답장 없음</option>
-										<option value="1">싱글</option>
-										<option value="2">연애중</option>
-										<option value="3">오픈 연애</option>
-										<option value="4">결혼</option></select>
+										name="relation"><option value="답장 없음">답장 없음</option>
+										<option value="싱글">싱글</option>
+										<option value="연애중">연애중</option>
+										<option value="오픈 연애">오픈 연애</option>
+										<option value="결혼">결혼</option></select>
 								</div>
 							</div>
 							<div class="field select single height">
@@ -404,74 +398,62 @@
 								<label for="factFormField-Body">신체</label>
 								<div class="wrp">
 									<select id="factFormField-Body" name="figure"><option
-											value="0">답장 없음</option>
-										<option value="1">날씬함</option>
-										<option value="2">정상</option>
-										<option value="3">탄탄한</option>
-										<option value="4">근육질의</option>
-										<option value="5">통통한</option></select>
-								</div>
-							</div>
-							<div class="field select single kids">
-								<label for="factFormField-Kids">아이</label>
-								<div class="wrp">
-									<select id="factFormField-Kids" name="childs"><option
-											value="0">답장 없음</option>
-										<option value="1">아이 없음</option>
-										<option value="2">아이 한명</option>
-										<option value="3">아이 두명</option>
-										<option value="4">아이 세명</option>
-										<option value="5">아이 세명 이상</option></select>
+											value="답장 없음">답장 없음</option>
+										<option value="날씬함">날씬함</option>
+										<option value="정상">정상</option>
+										<option value="탄탄한">탄탄한</option>
+										<option value="근육질의">근육질의</option>
+										<option value="통통한">통통한</option></select>
 								</div>
 							</div>
 							<div class="field select single smoker">
 								<label for="factFormField-Smoker">흡연자</label>
 								<div class="wrp">
 									<select id="factFormField-Smoker" name="smoker"><option
-											value="0">답장 없음</option>
-										<option value="1">비-흡연자</option>
-										<option value="2">전-흡연자</option>
-										<option value="3">간헐적 흡연자</option>
-										<option value="4">규칙적 흡연자</option></select>
+											value="답장 없음">답장 없음</option>
+										<option value="비-흡연자">비-흡연자</option>
+										<option value="전-흡연자">전-흡연자</option>
+										<option value="간헐적 흡연자">간헐적 흡연자</option>
+										<option value="규칙적 흡연자">규칙적 흡연자</option></select>
 								</div>
 							</div>
 							<div class="field select single alcohol">
 								<label for="factFormField-Alcohol">음주</label>
 								<div class="wrp">
 									<select id="factFormField-Alcohol" name="alcoholic"><option
-											value="0">답장 없음</option>
-										<option value="1">전혀</option>
-										<option value="2">가끔</option>
-										<option value="3">즐겨함</option></select>
+											value="답장 없음">답장 없음</option>
+										<option value="전혀">전혀</option>
+										<option value="가끔">가끔</option>
+										<option value="즐겨함">즐겨함</option></select>
 								</div>
 							</div>
 							<div class="field select single education">
 								<label for="factFormField-Education">교육</label>
 								<div class="wrp">
 									<select id="factFormField-Education" name="qualification"><option
-											value="0">답장 없음</option>
-										<option value="1">마치지 않음</option>
-										<option value="2">직업 학교</option>
-										<option value="3">중고등학교</option>
-										<option value="4">고등학교</option>
-										<option value="5">고등학교 디플로마</option>
-										<option value="6">대학/대학교</option>
-										<option value="7">대학원</option></select>
+											value="답장 없음">답장 없음</option>
+										<option value="마치지 않음">마치지 않음</option>
+										<option value="직업 학교">직업 학교</option>
+										<option value="중고등학교">중고등학교</option>
+										<option value="고등학교">고등학교</option>
+										<option value="고등학교 디플로마">고등학교 디플로마</option>
+										<option value="대학/대학교">대학/대학교</option>
+										<option value="대학원">대학원</option></select>
 								</div>
 							</div>
 							<div class="field select single profession">
 								<label for="factFormField-Profession">직업</label>
 								<div class="wrp">
 									<select id="factFormField-Profession" name="occupation"><option
-											value="0">답장 없음</option>
-										<option value="1">구직중</option>
-										<option value="2">견습생</option>
-										<option value="3">직원</option>
-										<option value="4">공무원</option>
-										<option value="5">주부</option>
-										<option value="6">은퇴함</option>
-										<option value="7">개인 사업</option>
-										<option value="9">학생</option></select>
+											value="답장 없음">답장 없음</option>
+										<option value="구직중">구직중</option>
+										<option value="견습생">견습생</option>
+										<option value="직원">직원</option>
+										<option value="공무원">공무원</option>
+										<option value="주부">주부</option>
+										<option value="은퇴함">은퇴함</option>
+										<option value="개인 사업">개인 사업</option>
+										<option value="학생">학생</option></select>
 								</div>
 							</div>
 							
@@ -479,12 +461,13 @@
 								<label for="factFormField-Relationship status">종교</label>
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
-										name="relationship"><option value="0">답장 없음</option>
-										<option value="1">기독교</option>
-										<option value="2">불교</option>
-										<option value="3">천주교</option>
-										<option value="4">힌두교</option>
-										<option value="5">크리스찬교</option></select>
+										name="religion"><option value="답장 없음">답장 없음</option>
+										<option value="기독교">기독교</option>
+										<option value="불교">불교</option>
+										<option value="천주교">천주교</option>
+										<option value="힌두교">힌두교</option>
+										<option value="크리스찬교">크리스찬교</option>
+										<option value="무교">무교</option></select>
 								</div>
 							</div>
 							
@@ -492,12 +475,12 @@
 								<label for="factFormField-Relationship status">연봉</label>
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
-										name="relationship"><option value="0">답장 없음</option>
-										<option value="1">3000이하</option>
-										<option value="2">5000이하</option>
-										<option value="3">7000이하</option>
-										<option value="4">1억이하</option>
-										<option value="5">1억이상</option></select>
+										name="salary"><option value="답장 없음">답장 없음</option>
+										<option value="3000이하">3000이하</option>
+										<option value="5000이하">5000이하</option>
+										<option value="7000이하">7000이하</option>
+										<option value="1억이하">1억이하</option>
+										<option value="1억이상">1억이상</option></select>
 								</div>
 							</div>
 							
@@ -505,9 +488,9 @@
 								<label for="factFormField-Relationship status">주생활지역</label>
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
-										name="relationship"><option value="0">답장 없음</option>
-										<option value="1">집</option>
-										<option value="2">회사</option></select>
+										name="Mainlivingarea"><option value="답장 없음">답장 없음</option>
+										<option value="집">집</option>
+										<option value="회사">회사</option></select>
 								</div>
 							</div>
 							
@@ -518,15 +501,15 @@
 					</div>
 					<div>
 						<div class="fiield" style="float:right; padding: 10px 0px 10px 0px">
-							<div class="btn Submit" id=""><a href="Client_0_main">
-								<h2>저장하기</h2></a>
-							</div>
-							<div class="btn Submit" id=""><a href="Client_0_main">
+							<h2><input type="submit" class="btn" value="저장하기"></h2>
+							<div class="btn Submit" id=""><a href="Client_0_main.do">
 								<h2>목록가기</h2></a>
 							</div>
 						</div>
 					</div>
 				</section>
+				
+				</form>
 		</div>
 		
 		

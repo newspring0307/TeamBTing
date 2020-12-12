@@ -99,27 +99,41 @@
 									<a class="imgWrp" target="_blank" style="background-color: #D8D8D8 " href="">
 									<img src="images/myboy3.jpg" alt=""></a>
 									<div class="intro">
-										<h1>이름 : 공유</h1><br>
-										<h2>닉네임 : 예은남편</h2>
-										<h2>이메일 : love@gmail.com</h2>
-										<h2>생&nbsp;&nbsp;일 : 1996-11-30</h2>
+										<h1>이름 : <% String name= request.getParameter("name");
+											out.println(name);
+ 										%></h1><br>
+										<h2>닉네임 : <% String nicname= request.getParameter("nicname");
+											out.println(nicname);
+ 										%></h2>
+										<h2>이메일 : <% String email= request.getParameter("email");
+											out.println(email);
+ 										%></h2>
+										<h2>생&nbsp;&nbsp;일 : <% String nyeon= request.getParameter("birthday-1");
+											out.println(nyeon);
+ 										%>-&nbsp;<% String wol= request.getParameter("birthday-0");
+											out.println(wol);
+ 										%>-&nbsp;<% String il= request.getParameter("birthday-2");
+											out.println(il);
+ 										%></h2>
 										<div class="form whiteForm aboutMe">
 											<h3>자기 소개</h3><br>
-											<p class="">내용</p>
+											<p class=""><% String aboutMe= request.getParameter("aboutMe");
+											out.println(aboutMe);
+ 										%></p>
 											
 										</div>
 									</div>
 								</article>
 								<nav class="profileMenu">
-									<a id=""  class="" href="Client_1_info_update"><i class="icon-favoriteOutline"> </i><span>프로필 수정하기</span></a>
-									<a id=""  class="" href="Client_1_info_PWreset1"><i class="icon-favoriteOutline"> </i><span>비밀번호 재설정</span></a>
-									<a id=""  class="" href="Client_1_tingtoday_list"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 글</span></a>
-									<a id=""  class="" href="Client_1_tingtoday_replylist"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 댓글</span></a>
+									<a id=""  class="" href="Client_1_info_update.do"><i class="icon-favoriteOutline"> </i><span>프로필 수정하기</span></a>
+									<a id=""  class="" href="Client_1_info_PWreset1.do"><i class="icon-favoriteOutline"> </i><span>비밀번호 재설정</span></a>
+									<a id=""  class="" href="Client_1_tingtoday_list.do"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 글</span></a>
+									<a id=""  class="" href="Client_1_tingtoday_replylist.do"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 댓글</span></a>
 
 									<a id=""  class="" href="#"><i class="icon-chat"> </i><span>채팅하기</span></a>
-									<a id=""  class="" href="Client_1_primium"><i class="icon-gift"> </i><span>프리미엄</span></a>
-									<a id=""  class="" href="Client_1_payment_list"><i class="icon-gift"> </i><span>결제 내역</span></a>
-									<a id=""  class="" href="Client_1_ask_list"><i class="icon-block"> </i><span>문의 및 신고</span></a>
+									<a id=""  class="" href="Client_1_primium.do"><i class="icon-gift"> </i><span>프리미엄</span></a>
+									<a id=""  class="" href="Client_1_payment_list.do"><i class="icon-gift"> </i><span>결제 내역</span></a>
+									<a id=""  class="" href="Client_1_ask_list.do"><i class="icon-block"> </i><span>문의 및 신고</span></a>
 								</nav>
 
 							</div>
@@ -127,46 +141,64 @@
 								<h3>상세프로필</h3><br>
 								<div class="facts">
 									<div class="group">
-										<span class="dt">찾는 것</span><span class="dd">------</span>
+										<span class="dt">관계 상태</span><span class="dd">
+										<% String select3= request.getParameter("relation");
+											out.println(select3);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">관심사</span><span class="dd">------</span>
+										<span class="dt">키</span><span class="dd">
+										<% String select4= request.getParameter("height");
+											out.println(select4);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">관계 상태</span><span class="dd">------</span>
+										<span class="dt">신체</span><span class="dd">
+										<% String select5= request.getParameter("figure");
+											out.println(select5);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">키</span><span class="dd">------</span>
+										<span class="dt">흡연자</span><span class="dd">
+										<% String select7= request.getParameter("smoker");
+											out.println(select7);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">신체</span><span class="dd">------</span>
+										<span class="dt">음주</span><span class="dd">
+										<% String select8= request.getParameter("alcoholic");
+											out.println(select8);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">아이</span><span class="dd">------</span>
+										<span class="dt">교육</span><span class="dd">
+										<% String select9= request.getParameter("qualification");
+											out.println(select9);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">흡연자</span><span class="dd">------</span>
+										<span class="dt">직업</span><span class="dd">
+										<% String select10= request.getParameter("occupation");
+											out.println(select10);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">음주</span><span class="dd">------</span>
+										<span class="dt">종교</span><span class="dd">
+										<% String select11= request.getParameter("religion");
+											out.println(select11);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">교육</span><span class="dd">------</span>
+										<span class="dt">연봉</span><span class="dd">
+										<% String select12= request.getParameter("salary");
+											out.println(select12);
+ 										%></span>
 									</div>
 									<div class="group">
-										<span class="dt">직업</span><span class="dd">------</span>
-									</div>
-									<div class="group">
-										<span class="dt">언어</span><span class="dd">------</span>
-									</div>
-									<div class="group">
-										<span class="dt">종교</span><span class="dd">------</span>
-									</div>
-									<div class="group">
-										<span class="dt">연봉</span><span class="dd">------</span>
-									</div>
-									<div class="group">
-										<span class="dt">주생활지역</span><span class="dd">------</span>
+										<span class="dt">주생활지역</span><span class="dd">
+										<% String select13= request.getParameter("Mainlivingarea");
+											out.println(select13);
+ 										%></span>
 									</div>
 								</div>
 							</div>

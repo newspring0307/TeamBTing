@@ -11,19 +11,19 @@
 			<meta http-equiv = "Content-Type" content="text/html; charset=utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<link rel="stylesheet" href="css/animate.css">
-			<link rel="stylesheet" href="css/simple-line-icons.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/style.css">
-			<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+			<link rel="stylesheet" href="resources/css/animate.css">
+			<link rel="stylesheet" href="resources/css/simple-line-icons.css">
+			<link rel="stylesheet" href="resources/css/magnific-popup.css">
+			<link rel="stylesheet" href="resources/css/bootstrap.css">
+			<link rel="stylesheet" href="resources/css/style.css">
+			<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
 			<link href="https://assets.moredates.com/theme/moredates/styles.min.css?v=1606817545" rel="stylesheet">
-			<script src="js/modernizr-2.6.2.min.js"></script>
+			<script src="resources/js/modernizr-2.6.2.min.js"></script>
 			<script
 			  src="https://code.jquery.com/jquery-3.1.1.min.js"
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			  crossorigin="anonymous"></script>
-			<script src="js/semantic.min.js"></script>
+			<script src="resources/js/semantic.min.js"></script>
 			
 	</head>
 
@@ -72,7 +72,7 @@
 					<ul class="notifications count-3">
 
 					<li class="primary">
-					<a class="notification" href="Client_2_Ting_main.jsp" ><br><i class="fh5co-intro-icon icon-speedometer"></i>
+					<a class="notification" href="Client_2_Ting_main" ><br><i class="fh5co-intro-icon icon-speedometer"></i>
 							<span class="inner"><br><span class="count">3</span>
 							<br><h2 style="color:white">오늘의 ting (매칭)</h2></span></a></li>
 
@@ -82,7 +82,7 @@
 							<br><h2 style="color:white">새로운 메시지</h2></span></a></li>
 
 					<li class="primary">
-					<a class="notification" href="Client_2_Ting_like.jsp" ><br><i class="fh5co-intro-icon icon-heart"></i>
+					<a class="notification" href="Client_2_Ting_like" ><br><i class="fh5co-intro-icon icon-heart"></i>
 							<span class="inner"><br><span class="count">5</span>
 							<br><h2 style="color:white">나의 좋아요 ♥</h2></span></a></li>
 
@@ -111,15 +111,15 @@
 									</div>
 								</article>
 								<nav class="profileMenu">
-									<a id=""  class="" href="Client_1_info_update.jsp"><i class="icon-favoriteOutline"> </i><span>프로필 수정하기</span></a>
-									<a id=""  class="" href="Client_1_info_PWreset1.jsp"><i class="icon-favoriteOutline"> </i><span>비밀번호 재설정</span></a>
-									<a id=""  class="" href="Client_1_tingtoday_list.jsp"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 글</span></a>
-									<a id=""  class="" href="Client_1_tingtoday_replylist.jsp"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 댓글</span></a>
+									<a id=""  class="" href="Client_1_info_update"><i class="icon-favoriteOutline"> </i><span>프로필 수정하기</span></a>
+									<a id=""  class="" href="Client_1_info_PWreset1"><i class="icon-favoriteOutline"> </i><span>비밀번호 재설정</span></a>
+									<a id=""  class="" href="Client_1_tingtoday_list"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 글</span></a>
+									<a id=""  class="" href="Client_1_tingtoday_replylist"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 댓글</span></a>
 
 									<a id=""  class="" href="#"><i class="icon-chat"> </i><span>채팅하기</span></a>
-									<a id=""  class="" href="Client_1_primium.jsp"><i class="icon-gift"> </i><span>프리미엄</span></a>
-									<a id=""  class="" href="Client_1_payment_list.jsp"><i class="icon-gift"> </i><span>결제 내역</span></a>
-									<a id=""  class="" href="Client_1_ask_list.jsp"><i class="icon-block"> </i><span>문의 및 신고</span></a>
+									<a id=""  class="" href="Client_1_primium"><i class="icon-gift"> </i><span>프리미엄</span></a>
+									<a id=""  class="" href="Client_1_payment_list"><i class="icon-gift"> </i><span>결제 내역</span></a>
+									<a id=""  class="" href="Client_1_ask_list"><i class="icon-block"> </i><span>문의 및 신고</span></a>
 								</nav>
 
 							</div>
@@ -219,17 +219,17 @@
 
 
 	<!---------------------------------script----------------------------------------------->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/jquery.easing.1.3.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/jquery.stellar.min.js"></script>
+	<script src="resources/js/jquery.countTo.js"></script>
+	<script src="resources/js/jquery.magnific-popup.min.js"></script>
+	<script src="resources/js/magnific-popup-options.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	<script src="js/main.js"></script>
+	<script src="resources/js/google_map.js"></script>
+	<script src="resources/js/main.js"></script>
 
 	</body>
 </html>

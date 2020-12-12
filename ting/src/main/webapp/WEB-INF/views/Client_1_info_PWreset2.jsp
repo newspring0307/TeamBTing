@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<!DOCTYPE html>
+<!1CTYPE html>
  <html class="no-js">
 	<head>
 
@@ -11,19 +11,19 @@
 			<meta http-equiv = "Content-Type" content="text/html; charset=utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<link rel="stylesheet" href="css/animate.css">
-			<link rel="stylesheet" href="css/simple-line-icons.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/style.css">
-			<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+			<link rel="stylesheet" href="resources/css/animate.css">
+			<link rel="stylesheet" href="resources/css/simple-line-icons.css">
+			<link rel="stylesheet" href="resources/css/magnific-popup.css">
+			<link rel="stylesheet" href="resources/css/bootstrap.css">
+			<link rel="stylesheet" href="resources/css/style.css">
+			<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
 
-			<script src="js/modernizr-2.6.2.min.js"></script>
+			<script src="resources/js/modernizr-2.6.2.min.js"></script>
 			<script
 			  src="https://code.jquery.com/jquery-3.1.1.min.js"
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			  crossorigin="anonymous"></script>
-			<script src="js/semantic.min.js"></script>
+			<script src="resources/js/semantic.min.js"></script>
 
 	</head>
 
@@ -81,7 +81,7 @@
 	  </ul>
     </div>
         <div class="field" style="padding-top: 15px">
-           <a class="ui fluid large teal submit button" href="#" onclick="location.href='Client_0_main.jsp'">확인</a>
+           <a class="ui fluid large teal submit button" href="#" onclick="location.href='Client_0_main'">확인</a>
            <!-- <div class="ui fluid large teal submit button" id="mypage_pwreset_save">변경하기</div> -->
       </div>
 	</div>
@@ -96,15 +96,15 @@
 	
  
 	<!---------------------------------script----------------------------------------------->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<script src="js/main.js"></script>
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/jquery.easing.1.3.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/jquery.stellar.min.js"></script>
+	<script src="resources/js/jquery.countTo.js"></script>
+	<script src="resources/js/jquery.magnific-popup.min.js"></script>
+	<script src="resources/js/magnific-popup-options.js"></script>
+	<script src="resources/js/main.js"></script>
 
 	
 
@@ -152,17 +152,17 @@
 
 
 	<!---------------------------------script----------------------------------------------->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/jquery.easing.1.3.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/jquery.stellar.min.js"></script>
+	<script src="resources/js/jquery.countTo.js"></script>
+	<script src="resources/js/jquery.magnific-popup.min.js"></script>
+	<script src="resources/js/magnific-popup-options.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	<script src="js/main.js"></script>
+	<script src="resources/js/google_map.js"></script>
+	<script src="resources/js/main.js"></script>
 
 	</body>
 </html>

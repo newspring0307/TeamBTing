@@ -115,15 +115,15 @@
 									</div>
 								</article>
 								<nav class="profileMenu">
-									<a id=""  class="" href="Client_1_info_update.do"><i class="icon-favoriteOutline"> </i><span>프로필 수정하기</span></a>
-									<a id=""  class="" href="Client_1_info_PWreset1.do"><i class="icon-favoriteOutline"> </i><span>비밀번호 재설정</span></a>
-									<a id=""  class="" href="Client_1_tingtoday_list.do"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 글</span></a>
-									<a id=""  class="" href="Client_1_tingtoday_replylist.do"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 댓글</span></a>
+									<a id=""  class="" href="Client_1_info_update"><i class="icon-favoriteOutline"> </i><span>프로필 수정하기</span></a>
+									<a id=""  class="" href="Client_1_info_PWreset1"><i class="icon-favoriteOutline"> </i><span>비밀번호 재설정</span></a>
+									<a id=""  class="" href="Client_1_tingtoday_list"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 글</span></a>
+									<a id=""  class="" href="Client_1_tingtoday_replylist"><i class="icon-kiss"> </i><span>팅투데이 - 나의 작성 댓글</span></a>
 
 									<a id=""  class="" href="#"><i class="icon-chat"> </i><span>채팅하기</span></a>
-									<a id=""  class="" href="Client_1_primium.do"><i class="icon-gift"> </i><span>프리미엄</span></a>
-									<a id=""  class="" href="Client_1_payment_list.do"><i class="icon-gift"> </i><span>결제 내역</span></a>
-									<a id=""  class="" href="Client_1_ask_list.do"><i class="icon-block"> </i><span>문의 및 신고</span></a>
+									<a id=""  class="" href="Client_1_primium"><i class="icon-gift"> </i><span>프리미엄</span></a>
+									<a id=""  class="" href="Client_1_payment_list"><i class="icon-gift"> </i><span>결제 내역</span></a>
+									<a id=""  class="" href="Client_1_ask_list"><i class="icon-block"> </i><span>문의 및 신고</span></a>
 								</nav>
 
 							</div>

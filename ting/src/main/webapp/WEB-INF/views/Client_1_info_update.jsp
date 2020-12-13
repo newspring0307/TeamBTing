@@ -88,7 +88,6 @@
 				
 				
 				<!-- 나의프로필 -->
-				<form action="Client_0_main.do" method="post">
 				
 				<section class="profilePage account">
 					<h2 class="h1">나의 프로필</h2>
@@ -99,164 +98,23 @@
 							<div class="intro">
 								<div class="form whiteForm username">
 									<div class="field input">
-										<label for="editUserNameInput">이름</label><input
-											type="text" name="name" id="editUserNameInput" placeholder="본인이름"
-											value="">
+										<label for="editUserNameInput">이름</label>${myDetailInfo.name}
 									</div>
-									
+									<form method="POST" action="updateClientDetailInfo">
 									<div class="field input">
 										<label for="editUserNameInput1">닉네임</label><input
-											type="text" name="nicname" id="editUserNameInput1" placeholder="닉네임"
-											value="">
+											type="text" name="nickname" id="nickname" placeholder="닉네임"
+											value="${myDetailInfo.nickname}">
 									</div>
 									
-									<div class="block" style="padding-right: 40px">
-												<div class="wrp"><label for="editUserNameInput1">성별</label>
-													<select name="gender"><option value="선택">선택</option>
-														<option value="여">여</option>
-														<option value="남">남</option></select>
-												</div>
-											</div>
-									
-									
-									<div class="field text">
-										<label for="changeProfileEmail">이메일</label><input type="email"
-											name="email" id="changeProfileEmail" value=""
-											placeholder="이메일을 입력하세요.">
-									</div>
-									
-									<div class="field select single birthdaySelect">
-										<label>생일</label>
-										<div class="">
-											
-											
-											<div class="block">
-												<div class="wrp">
-													<select name="birthday-1"><option value="년도">년도</option>
-														<option value="2001">2001</option>
-														<option value="2000">2000</option>
-														<option value="1999">1999</option>
-														<option value="1998">1998</option>
-														<option value="1997">1997</option>
-														<option value="1996">1996</option>
-														<option value="1995">1995</option>
-														<option value="1994">1994</option>
-														<option value="1993">1993</option>
-														<option value="1992">1992</option>
-														<option value="1991">1991</option>
-														<option value="1990">1990</option>
-														<option value="1989">1989</option>
-														<option value="1988">1988</option>
-														<option value="1987">1987</option>
-														<option value="1986">1986</option>
-														<option value="1985">1985</option>
-														<option value="1984">1984</option>
-														<option value="1983">1983</option>
-														<option value="1982">1982</option>
-														<option value="1981">1981</option>
-														<option value="1980">1980</option>
-														<option value="1979">1979</option>
-														<option value="1978">1978</option>
-														<option value="1977">1977</option>
-														<option value="1976">1976</option>
-														<option value="1975">1975</option>
-														<option value="1974">1974</option>
-														<option value="1973">1973</option>
-														<option value="1972">1972</option>
-														<option value="1971">1971</option>
-														<option value="1970">1970</option>
-														<option value="1969">1969</option>
-														<option value="1968">1968</option>
-														<option value="1967">1967</option>
-														<option value="1966">1966</option>
-														<option value="1965">1965</option>
-														<option value="1964">1964</option>
-														<option value="1963">1963</option>
-														<option value="1962">1962</option>
-														<option value="1961">1961</option>
-														<option value="1960">1960</option>
-														<option value="1959">1959</option>
-														<option value="1958">1958</option>
-														<option value="1957">1957</option>
-														<option value="1956">1956</option>
-														<option value="1955">1955</option>
-														<option value="1954">1954</option>
-														<option value="1953">1953</option>
-														<option value="1952">1952</option>
-														<option value="1951">1951</option>
-														<option value="1950">1950</option></select>
-												</div>
-												<small>년</small>
-											</div>
-											<div class="block" >
-												<div class="wrp">
-													<select name="birthday-0"><option value="01">1월</option>
-														<option value="02">2월</option>
-														<option value="03">3월</option>
-														<option value="04">4월</option>
-														<option value="05">5월</option>
-														<option value="06">6월</option>
-														<option value="07">7월</option>
-														<option value="08">8월</option>
-														<option value="09">9월</option>
-														<option value="10">10월</option>
-														<option value="11">11월</option>
-														<option value="12">12월</option></select>
-												</div>
-												<small>월</small>
-											</div>
-											<div class="block" style="padding-right: 40px">
-												<div class="wrp">
-													<select name="birthday-2"><option value="01">01</option>
-														<option value="02">02</option>
-														<option value="03">03</option>
-														<option value="04">04</option>
-														<option value="05">05</option>
-														<option value="06">06</option>
-														<option value="07">07</option>
-														<option value="08">08</option>
-														<option value="09">09</option>
-														<option value="10">10</option>
-														<option value="11">11</option>
-														<option value="12">12</option>
-														<option value="13">13</option>
-														<option value="14">14</option>
-														<option value="15">15</option>
-														<option value="16">16</option>
-														<option value="17">17</option>
-														<option value="18">18</option>
-														<option value="19">19</option>
-														<option value="20">20</option>
-														<option value="21">21</option>
-														<option value="22">22</option>
-														<option value="23">23</option>
-														<option value="24">24</option>
-														<option value="25">25</option>
-														<option value="26">26</option>
-														<option value="27">27</option>
-														<option value="28">28</option>
-														<option value="29">29</option>
-														<option value="30">30</option>
-														<option value="31">31</option></select>
-												</div>
-												<small>일</small>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									
-									
-								</div>
-								
+
 								<div class="form whiteForm aboutMe">
 									<header class="editHeader leftAligned">
 										<h3>자기 소개</h3>
 									</header>
 									<p class="hidden"></p>
 									<div class="field text">
-										<textarea name="aboutMe" placeholder="자기 소개..."></textarea>
+										<textarea name="selfIntro" placeholder="자기 소개...">${myDetailInfo.selfIntro}</textarea>
 									</div>
 									
 									
@@ -295,22 +153,12 @@
 						</header>
 						
 						<div class="grid cols-1 cols-m-2 form whiteForm factForm">
-							<div class="field select single relationshipstatus">
-								<label for="factFormField-Relationship status">관계 상태</label>
-								<div class="wrp">
-									<select id="factFormField-Relationship status"
-										name="relation"><option value="답장 없음">답장 없음</option>
-										<option value="싱글">싱글</option>
-										<option value="연애중">연애중</option>
-										<option value="오픈 연애">오픈 연애</option>
-										<option value="결혼">결혼</option></select>
-								</div>
-							</div>
+							
 							<div class="field select single height">
 								<label for="factFormField-Height">키</label>
 								<div class="wrp">
 									<select id="factFormField-Height" name="height"><option
-											value="140">140 cm</option>
+											value="${myDetailInfo.height}">${myDetailInfo.height} cm</option>
 										<option value="140">140 cm</option>
 										<option value="141">141 cm</option>
 										<option value="142">142 cm</option>
@@ -395,57 +243,54 @@
 								</div>
 							</div>
 							<div class="field select single body">
-								<label for="factFormField-Body">신체</label>
+								<label for="factFormField-Body">체형</label>
 								<div class="wrp">
-									<select id="factFormField-Body" name="figure"><option
-											value="답장 없음">답장 없음</option>
-										<option value="날씬함">날씬함</option>
-										<option value="정상">정상</option>
-										<option value="탄탄한">탄탄한</option>
-										<option value="근육질의">근육질의</option>
-										<option value="통통한">통통한</option></select>
+									<select id="factFormField-Body" name="bodyShape"><option
+											value="${myDetailInfo.bodyShape}">${myDetailInfo.bodyShape}</option>
+										<option value="thin">날씬함</option>
+										<option value="normal">정상</option>
+										<option value="muscle">근육질의</option>
+										<option value="fat">통통한</option></select>
 								</div>
 							</div>
 							<div class="field select single smoker">
 								<label for="factFormField-Smoker">흡연자</label>
 								<div class="wrp">
-									<select id="factFormField-Smoker" name="smoker"><option
-											value="답장 없음">답장 없음</option>
-										<option value="비-흡연자">비-흡연자</option>
-										<option value="전-흡연자">전-흡연자</option>
-										<option value="간헐적 흡연자">간헐적 흡연자</option>
-										<option value="규칙적 흡연자">규칙적 흡연자</option></select>
+									<select id="factFormField-Smoker" name="smoke"><option
+											value="${myDetailInfo.smoke}">${myDetailInfo.smoke}</option>
+										<option value="none">비흡연</option>
+										<option value="sometimes">가끔</option>
+										<option value="often">종종</option>
+										<option value="always">매일</option></select>
 								</div>
 							</div>
 							<div class="field select single alcohol">
 								<label for="factFormField-Alcohol">음주</label>
 								<div class="wrp">
-									<select id="factFormField-Alcohol" name="alcoholic"><option
-											value="답장 없음">답장 없음</option>
-										<option value="전혀">전혀</option>
-										<option value="가끔">가끔</option>
-										<option value="즐겨함">즐겨함</option></select>
+									<select id="factFormField-Alcohol" name="drink"><option
+											value="${myDetailInfo.drink}">${myDetailInfo.drink}</option>
+										<option value="0">안 마심</option>
+										<option value="0.5">1병 이하</option>
+										<option value="1.5">1병 - 2병</option>
+										<option value="2.5">2병 초과</option></select>
 								</div>
 							</div>
 							<div class="field select single education">
 								<label for="factFormField-Education">교육</label>
 								<div class="wrp">
-									<select id="factFormField-Education" name="qualification"><option
-											value="답장 없음">답장 없음</option>
-										<option value="마치지 않음">마치지 않음</option>
-										<option value="직업 학교">직업 학교</option>
-										<option value="중고등학교">중고등학교</option>
-										<option value="고등학교">고등학교</option>
-										<option value="고등학교 디플로마">고등학교 디플로마</option>
-										<option value="대학/대학교">대학/대학교</option>
-										<option value="대학원">대학원</option></select>
+									<select id="factFormField-Education" name="education"><option
+											value="${myDetailInfo.education}">${myDetailInfo.education}</option>
+										<option value="중졸">중고등학교</option>
+										<option value="고졸">고등학교</option>
+										<option value="대졸">대학/대학교</option>
+										<option value="석박사">석박사</option></select>
 								</div>
 							</div>
 							<div class="field select single profession">
 								<label for="factFormField-Profession">직업</label>
 								<div class="wrp">
-									<select id="factFormField-Profession" name="occupation"><option
-											value="답장 없음">답장 없음</option>
+									<select id="factFormField-Profession" name="job"><option
+											value="${myDetailInfo.job}">${myDetailInfo.job}</option>
 										<option value="구직중">구직중</option>
 										<option value="견습생">견습생</option>
 										<option value="직원">직원</option>
@@ -461,7 +306,7 @@
 								<label for="factFormField-Relationship status">종교</label>
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
-										name="religion"><option value="답장 없음">답장 없음</option>
+										name="religion"><option value="${myDetailInfo.religion}">${myDetailInfo.religion}</option>
 										<option value="기독교">기독교</option>
 										<option value="불교">불교</option>
 										<option value="천주교">천주교</option>
@@ -475,49 +320,37 @@
 								<label for="factFormField-Relationship status">연봉</label>
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
-										name="salary"><option value="답장 없음">답장 없음</option>
-										<option value="3000이하">3000이하</option>
-										<option value="5000이하">5000이하</option>
-										<option value="7000이하">7000이하</option>
-										<option value="1억이하">1억이하</option>
-										<option value="1억이상">1억이상</option></select>
+										name="salary"><option value="${myDetailInfo.salary}">${myDetailInfo.salary}</option>
+										<option value=1000>2000이하</option>
+										<option value=2500>2000-3000</option>
+										<option value=4000>3000-5000</option>
+										<option value=6500>5000-8000</option>
+										<option value=0>비공개</option></select>
 								</div>
 							</div>
 							
-							<div class="field select single relationshipstatus">
-								<label for="factFormField-Relationship status">주생활지역</label>
-								<div class="wrp">
-									<select id="factFormField-Relationship status"
-										name="Mainlivingarea"><option value="답장 없음">답장 없음</option>
-										<option value="집">집</option>
-										<option value="회사">회사</option></select>
-								</div>
-							</div>
-							
-							
-							
-							
+						
 						</div>
 					</div>
 					<div>
 						<div class="fiield" style="float:right; padding: 10px 0px 10px 0px">
 							<h2><input type="submit" class="btn" value="저장하기"></h2>
-							<div class="btn Submit" id=""><a href="Client_0_main.do">
-								<h2>목록가기</h2></a>
-							</div>
+
 						</div>
 					</div>
+					</form>
 				</section>
 				
-				</form>
+				
 		</div>
 		
 		
 		
 		
 	</div>
-	<!-- 내정보 -->
 	
+	<!-- 내정보 -->
+
 	<!---------------------------------- Footer start ---------------------------------->
 
    <div class="ui inverted vertical footer segment" style="background: linear-gradient(-135deg, #52D3AA, #54FFFF) fixed;">

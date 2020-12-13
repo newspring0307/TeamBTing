@@ -25,4 +25,25 @@
 	</select>
 	
 	
+
+	
+	<update id="updateClientDetailInfo" parameterType="clientDetailInfo">
+		<![CDATA[
+		UPDATE clientDetailInfo SET
+		nickname = #{nickname},
+		job = #{job},
+		salary = #{salary},
+		religion = #{religion},
+		education = #{education},
+		height = #{height},
+		bodyShape = #{bodyShape},
+		drink = #{drink},
+		smoke = #{smoke},
+		selfIntro = #{selfIntro},
+		lastUpdate = sysdate
+		WHERE clientIdx = #{clientIdx}
+		]]>
+	</update>
+	
+	
 </mapper>

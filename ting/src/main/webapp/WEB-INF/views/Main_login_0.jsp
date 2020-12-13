@@ -5,7 +5,7 @@
  <html class="no-js">
 	<head>
 	
-	<title>ë¡œê·¸ì¸</title>
+	<title>·Î±×ÀÎ</title>
 	<meta http-equiv = "Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -41,9 +41,10 @@
 	<body class="text-center">
 
 	 <div class="form-signin">
-		<form role="form" action="/basic-1.0.0-BUILD-SNAPSHOT/login" method="POST">
+		<form role="form" action="${pageContext.request.contextPath}/login" method="POST">
 			<h1 style="color:#52d3aa;margin:0px;">ting</h1><br>
-			<h2 style="color:#52d3aa;margin:0px;">ë¡œê·¸ì¸</h2><br><br>
+			<h2 style="color:#52d3aa;margin:0px;">·Î±×ÀÎ</h2><br><br>
+			<h3>${msg}</h3>
 			<div>
 						<div class="form-group ">
 							<label for="name" class="sr-only">ID</label>
@@ -55,25 +56,25 @@
 						</div>
 						<div class="form-group ">
 						  <div class="checkbox">
-							<label><input type="checkbox">ì•„ì´ë”” ì €ìž¥</label>
+							<label><input type="checkbox">¾ÆÀÌµð ÀúÀå</label>
 						  </div>
 						</div>
 					</div>
 			<div class="form-group ">
-						<input class="btn btn-primary btn-lg btn-block" value="ë¡œê·¸ì¸" type="submit">
+						<input class="btn btn-primary btn-lg btn-block" value="·Î±×ÀÎ" type="submit">
 					</div>
-					<p><a href="Main_login_1_PW_search" target="_blank">ë¹„ë°€ë²ˆí˜¸ì„ ìžŠìœ¼ì…¨ë‚˜ìš”?</a></p>
-					<p><a href="Main_register_0" target="_blank">ê³„ì •ì´ ì—†ìœ¼ì‹ ê°€ìš”? ting íšŒì›ê°€ìž…</a></p><br>
+					<p><a href="Main_login_1_PW_search" target="_blank">ºñ¹Ð¹øÈ£À» ÀØÀ¸¼Ì³ª¿ä?</a></p>
+					<p><a href="Main_register_0" target="_blank">°èÁ¤ÀÌ ¾øÀ¸½Å°¡¿ä? ting È¸¿ø°¡ÀÔ</a></p><br>
 </form>
 
  <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div><br>
 
-		 <p><button class="ui inverted yellow button">(ìž„ì‹œ)&nbsp;ì¹´ì¹´ì˜¤í†¡ ë¡œê·¸ì¸</button></p>
-		 <p> <button class="ui inverted green button">(ìž„ì‹œ)&nbsp;&nbsp;&nbsp;ë„¤ì´ë²„ ë¡œê·¸ì¸</button></p>
-		 <p> <button class="ui inverted red button">(ìž„ì‹œ)&nbsp;&nbsp;&nbsp;êµ¬ê¸€ ë¡œê·¸ì¸&nbsp;&nbsp;</button></p>
+		 <p><button class="ui inverted yellow button">(ÀÓ½Ã)&nbsp;Ä«Ä«¿ÀÅå ·Î±×ÀÎ</button></p>
+		 <p> <button class="ui inverted green button">(ÀÓ½Ã)&nbsp;&nbsp;&nbsp;³×ÀÌ¹ö ·Î±×ÀÎ</button></p>
+		 <p> <button class="ui inverted red button">(ÀÓ½Ã)&nbsp;&nbsp;&nbsp;±¸±Û ·Î±×ÀÎ&nbsp;&nbsp;</button></p>
 		 <br><br>
-		 <p><a href="#" target="_blank">ì´ìš©ì•½ê´€&nbsp;|&nbsp;</a>
-			   <a href="#" target="_blank">ê°œì¸ì •ë³´ì²˜ë¦¬ë°©ì¹¨</a></p>
+		 <p><a href="#" target="_blank">ÀÌ¿ë¾à°ü&nbsp;|&nbsp;</a>
+			   <a href="#" target="_blank">°³ÀÎÁ¤º¸Ã³¸®¹æÄ§</a></p>
 	 </div>
 
 
@@ -90,4 +91,4 @@
 
 	</body>
 </html>
- 
+

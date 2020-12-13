@@ -23,6 +23,8 @@ public class ClientDetailInfoVO {
 	private String photo;
 	private int premiumIdx;
 	private Date lastUpdate;
+	private String selfIntro;
+	
 	public int getClientIdx() {
 		return clientIdx;
 	}
@@ -131,6 +133,12 @@ public class ClientDetailInfoVO {
 	}
 	public void setLastUpdate(Date lastUpdate) {
 		this.lastUpdate = lastUpdate;
+	}
+	public String getSelfIntro() {
+		return selfIntro;
+	}
+	public void setSelfIntro(String selfIntro) {
+		this.selfIntro = selfIntro;
 	}
 
 }

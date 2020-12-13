@@ -7,12 +7,12 @@
 		<![CDATA[
 		INSERT INTO clientDetailInfo(clientIdx, name, nickname,gender,
 		job,age,salary,latitude,longitude,religion,education,height,bodyShape,
-		drink,smoke,lastUpdate)
+		drink,smoke,selfIntro,lastUpdate)
 		VALUES(clientDetailInfo_SEQ.nextval,
 			#{name},#{nickname},#{gender},#{job},
 			#{age},#{salary},#{latitude},#{longitude},#{religion}
 			,#{education},#{height}
-			,#{bodyShape},#{drink},#{smoke},sysdate)
+			,#{bodyShape},#{drink},#{smoke},#{selfIntro},sysdate)
 		]]>
 	</insert>
 	

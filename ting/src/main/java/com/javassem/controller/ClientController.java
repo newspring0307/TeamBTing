@@ -14,7 +14,7 @@ public class ClientController {
 	@Autowired
 	private ClientDetailInfoService clientDetailInfoService;
 	
-	@RequestMapping("/insertClientDetailInfo.do")
+	@RequestMapping("/insertClientDetailInfo")
 	public String insertClientDetailInfo(ClientDetailInfoVO vo) {
 		System.out.println("실행되는지확인");
 		clientDetailInfoService.insertClientDetailInfo(vo);

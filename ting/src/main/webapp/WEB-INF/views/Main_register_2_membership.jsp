@@ -35,7 +35,37 @@
 		<script src="resources/js/form.js"></script>
 		<script src="resources/js/transition.js"></script>
 <!---------------------------------function----------------------------------------------->
+<script>
+	$(document).ready(function(){ 
+	
+		$('#submit_func').click(function(){
+			location.href='Main_register_2_membership';
+		//submit 함수는 따로 추가
 
+		/* // 취소
+		$(".cencle").on("click", function(){
+			
+			location.href = "/login";
+					    
+		}) */
+			if($("#email").val()==""){
+				alert("이메일을 입력해주세요.");
+				$("email").focus();
+				return false;
+			}
+			if($("#password").val()==""){
+				alert("비밀번호를 입력해주세요.");
+				$("#password").focus();
+				return false;
+			}
+			if($("#phone").val()==""){
+				alert("핸드폰 번호를 입력해주세요.");
+				$("#phone").focus();
+				return false;
+			}
+		});		
+	});//ready end
+</script>
 </head>
 
 <body class="text-center">
@@ -50,19 +80,19 @@
 
 		<!-- <form class="ui large form" method="post"
 			action="/basic-1.0.0-BUILD-SNAPSHOT/register"> -->
-		<form class="ui large form" method="post" action="Client_4_detailInsertStart">
+		<form class="ui large form" method="post" action="${pageContext.request.contextPath}/register">
 			<div class="ui stacked segment">
 				<div class="field">
-					<input type="email" name="email" placeholder="이메일">
+					<input type="email" id="email" name="email" placeholder="이메일">
 				</div>
 				<div class="field">
-					<input type="password" name="password" placeholder="비밀번호">
+					<input type="password" id="password" name="password" placeholder="비밀번호">
 				</div>
 				<!-- <div class="field">
             <input type="password" name="password_check" placeholder="비밀번호 확인">
        </div> -->
 				<div class="field">
-					<input type="tel" name="phone" placeholder="핸드폰 번호">
+					<input type="tel" name="phone" id="phone" placeholder="핸드폰 번호">
 					<button class="compact ui button" style="float: right; margin: 3px">인증번호받기</button>
 				</div>
 				<br>

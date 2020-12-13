@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/input.css">
     <link rel="stylesheet" type="text/css" href="resources/css/segment.css">
     <link rel="stylesheet" href="resources/css/signin.css" >
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="resources/js/modernizr-2.6.2.min.js"></script>
 
 	<!--semantic-->
 	<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">

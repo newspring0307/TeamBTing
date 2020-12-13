@@ -8,13 +8,21 @@
 		INSERT INTO idealType(clientIdx, minAge, maxAge,minSalary,
 		maxSalary,minDistance,maxDistance,minHeight,maxHeight,religion,education,bodyShape,
 		drink,smoke,lastUpdate)
-		VALUES(idealType_SEQ.nextval,
+		VALUES(#{clientIdx},
 			#{minAge},#{maxAge},#{minSalary},#{maxSalary},
 			#{minDistance},#{maxDistance},#{minHeight},#{maxHeight},#{religion}
 			,#{education}
 			,#{bodyShape},#{drink},#{smoke},sysdate)
 		]]>
 	</insert>
+	
+	<select id="getIdealType" parameterType="idealType" resultType="idealType">
+		<![CDATA[
+		SELECT *
+		FROM idealType
+		WHERE clientIdx = #{clientIdx}
+		]]>
+	</select>
 	
 	
 </mapper>

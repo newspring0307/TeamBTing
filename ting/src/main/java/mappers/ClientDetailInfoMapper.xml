@@ -8,13 +8,21 @@
 		INSERT INTO clientDetailInfo(clientIdx, name, nickname,gender,
 		job,age,salary,latitude,longitude,religion,education,height,bodyShape,
 		drink,smoke,selfIntro,lastUpdate)
-		VALUES(clientDetailInfo_SEQ.nextval,
+		VALUES(#{clientIdx},
 			#{name},#{nickname},#{gender},#{job},
 			#{age},#{salary},#{latitude},#{longitude},#{religion}
 			,#{education},#{height}
 			,#{bodyShape},#{drink},#{smoke},#{selfIntro},sysdate)
 		]]>
 	</insert>
+	
+	<select id="getClientDetailInfo" parameterType="clientDetailInfo" resultType="clientDetailInfo">
+		<![CDATA[
+		SELECT *
+		FROM clientDetailInfo
+		WHERE clientIdx = #{clientIdx}
+		]]>
+	</select>
 	
 	
 </mapper>

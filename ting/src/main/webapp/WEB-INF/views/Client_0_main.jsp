@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 
 <!DOCTYPE html>
  <html class="no-js">
@@ -90,7 +91,10 @@
 					</ul>
 				</div>
 				<!-- 나의 프리미엄 -->
-					
+<!-- 
+
+
+ -->					
 					
 						<section class="profilePage">
 							<a class="backLink" ><h1>마이페이지</h1></a><br>
@@ -99,27 +103,13 @@
 									<a class="imgWrp" target="_blank" style="background-color: #D8D8D8 " href="">
 									<img src="images/myboy3.jpg" alt=""></a>
 									<div class="intro">
-										<h1>이름 : <% String name= request.getParameter("name");
-											out.println(name);
- 										%></h1><br>
-										<h2>닉네임 : <% String nicname= request.getParameter("nicname");
-											out.println(nicname);
- 										%></h2>
-										<h2>이메일 : <% String email= request.getParameter("email");
-											out.println(email);
- 										%></h2>
-										<h2>생&nbsp;&nbsp;일 : <% String nyeon= request.getParameter("birthday-1");
-											out.println(nyeon);
- 										%>-&nbsp;<% String wol= request.getParameter("birthday-0");
-											out.println(wol);
- 										%>-&nbsp;<% String il= request.getParameter("birthday-2");
-											out.println(il);
- 										%></h2>
+									
+										<h1>이름 : ${myDetailInfo.name}</h1><br>
+										<h2>닉네임 : ${myDetailInfo.nickname}</h2>
+
 										<div class="form whiteForm aboutMe">
 											<h3>자기 소개</h3><br>
-											<p class=""><% String aboutMe= request.getParameter("aboutMe");
-											out.println(aboutMe);
- 										%></p>
+											<p class="">${myDetailInfo.selfIntro}</p>
 											
 										</div>
 									</div>
@@ -141,65 +131,38 @@
 								<h3>상세프로필</h3><br>
 								<div class="facts">
 									<div class="group">
-										<span class="dt">관계 상태</span><span class="dd">
-										<% String select3= request.getParameter("relation");
-											out.println(select3);
- 										%></span>
-									</div>
-									<div class="group">
 										<span class="dt">키</span><span class="dd">
-										<% String select4= request.getParameter("height");
-											out.println(select4);
- 										%></span>
+										${myDetailInfo.height}</span>
 									</div>
 									<div class="group">
-										<span class="dt">신체</span><span class="dd">
-										<% String select5= request.getParameter("figure");
-											out.println(select5);
- 										%></span>
+										<span class="dt">체형</span><span class="dd">
+										${myDetailInfo.bodyShape}</span>
 									</div>
 									<div class="group">
-										<span class="dt">흡연자</span><span class="dd">
-										<% String select7= request.getParameter("smoker");
-											out.println(select7);
- 										%></span>
+										<span class="dt">흡연여부</span><span class="dd">
+										${myDetailInfo.smoke}</span>
 									</div>
 									<div class="group">
-										<span class="dt">음주</span><span class="dd">
-										<% String select8= request.getParameter("alcoholic");
-											out.println(select8);
- 										%></span>
+										<span class="dt">음주여부</span><span class="dd">
+										${myDetailInfo.drink}병</span>
 									</div>
 									<div class="group">
-										<span class="dt">교육</span><span class="dd">
-										<% String select9= request.getParameter("qualification");
-											out.println(select9);
- 										%></span>
+										<span class="dt">학력</span><span class="dd">
+										${myDetailInfo.education}</span>
 									</div>
 									<div class="group">
 										<span class="dt">직업</span><span class="dd">
-										<% String select10= request.getParameter("occupation");
-											out.println(select10);
- 										%></span>
+										${myDetailInfo.job}</span>
 									</div>
 									<div class="group">
 										<span class="dt">종교</span><span class="dd">
-										<% String select11= request.getParameter("religion");
-											out.println(select11);
- 										%></span>
+										${myDetailInfo.religion}</span>
 									</div>
 									<div class="group">
 										<span class="dt">연봉</span><span class="dd">
-										<% String select12= request.getParameter("salary");
-											out.println(select12);
- 										%></span>
+										${myDetailInfo.salary}</span>
 									</div>
-									<div class="group">
-										<span class="dt">주생활지역</span><span class="dd">
-										<% String select13= request.getParameter("Mainlivingarea");
-											out.println(select13);
- 										%></span>
-									</div>
+
 								</div>
 							</div>
 						</section>

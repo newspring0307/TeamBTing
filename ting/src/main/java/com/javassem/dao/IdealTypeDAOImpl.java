@@ -38,7 +38,7 @@ public class IdealTypeDAOImpl implements IdealTypeDAO{
 	@Override
 	public IdealTypeVO getIdealType(IdealTypeVO vo) {
 		System.out.println("===> Mybatis getBoard() 호출");
-		return mybatis.selectOne("IdealTypeDAO.getIdealTypeDAO", vo);
+		return mybatis.selectOne("IdealTypeDAO.getIdealType", vo);
 	}
 
 	@Override

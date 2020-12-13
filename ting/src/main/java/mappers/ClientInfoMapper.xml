@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.javassem.dao.ClientInfoDAO" >
+	<!-- 로그인 -->
+	<select id="login" parameterType="com.javassem.domain.ClientInfoVO" resultType="int">
+		SELECT COUNT(*) 
+		FROM clientInfo 
+		WHERE email = #{email} AND password = #{password}
+	</select>
+	<!-- <select id="selectLogin" parameterType="Integer" resultType="com.javassem.domain.ClientInfoVO">
+		SELECT COUNT(*) FROM clientInfo WHERE email = #{email} AND password = #{password}
+	</select> -->
+	<!-- 로그인 -->
+	<select id="selectOneByEmail"  parameterType="com.javassem.domain.ClientInfoVO">
+		SELECT *
+		FROM clientInfo
+		WHERE email = #(email)
+	</select>
+	<insert id="register" parameterType="com.javassem.domain.ClientInfoVO">
+		INSERT INTO clientInfo 
+		VALUES(
+				clientInfo_seq.nextVal,#{email},#{password},#{phone},SYSDATE
+			)
+	</insert>
+	<delete id="deleteClientInfo" parameterType="com.javassem.domain.ClientInfoVO">
+		DELETE FROM clientInfo
+		WHERE email = #{email} AND password = #{password}
+	</delete>
+</mapper>

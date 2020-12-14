@@ -32,6 +32,7 @@
 	<body>
 
 	<!---------------------------------- header start ---------------------------------->
+	<!---------------------------------- header start ---------------------------------->
 	<header style="background: linear-gradient(-135deg, #52D3AA, #54FFFF) fixed;">
 			<div class="container">
 			   <div class="navbar-header">

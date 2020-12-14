@@ -16,5 +16,19 @@
 		]]>
 	</insert>
 	
+	<select id="getClientDetailInfo" resultType="clientDetailInfo">
+		<![CDATA[
+		SELECT name,photo
+		FROM ClientDetailInfo where clientIdx=#{clientIdx}
+		]]>
+	</select>
+	
+	<select id="getClientDetailInfoList" resultType="clientDetailInfo">
+		<![CDATA[
+		SELECT *
+		FROM ClientDetailInfo
+		]]>
+	</select>
+	
 	
 </mapper>

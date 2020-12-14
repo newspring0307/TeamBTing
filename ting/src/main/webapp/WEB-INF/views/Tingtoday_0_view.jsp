@@ -106,32 +106,22 @@
 <br><br>
 <!--게시판 테이블-->
 	<div class = "TingToday_list">
-		<table class="table table-striped"style="text-align: center; border: 1px solid #dddddd;">
-			<thead>
-				<tr>						
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">글번호</th>
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">제목</th>	
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">작성자</th>
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">작성일자</th>	
-															
-				</tr>
-			</thead>								
-			<tbody>
-				<c:forEach items="${boardList}" var="list">
-				 <tr>
-				  <td>${list.boardIdx}</td>
-				  <td>
-				  	 <a href="Tingtoday_0_view?boardIdx=${list.boardIdx}">${list.title}</a>
-				  </td>
-				  <td>${list.clientIdx}</td>
-				  <td>${list.regdate}</td>
-				 </tr>
-				</c:forEach>
-
+		<form method="post" action="updateBoard" >
+			<input type="text" id="title" name="title" class="form-control mt-4 mb-2" value="${board.title}" >
+				
+			<div class="form-group">
+				<textarea class="form-control" rows="10" name="content"> ${board.content}</textarea>
+			</div>
+			<input type="hidden" name="boardIdx" class="form-control" value="${board.boardIdx}"><br>
 			
-			</tbody>
-		</table>			
-		<button class="ui teal button" onclick="location.href='Tingtoday_0_write'">글쓰기</button>
+						
+		<button type="submit" class="ui teal button" style="left:93%; position: relative;">수정</button>	
+		</form>	  		
+		<button type="submit" class="ui teal button" onclick="location.href='deleteBoard?boardIdx=${board.boardIdx}'">삭제</button>	
+		<button type="submit" class="ui teal button" onclick="location.href='Tingtoday_0_main'">목록</button>			
+		
+	      
+  
 	</div>
 	</div>
 	</div>

@@ -106,32 +106,16 @@
 <br><br>
 <!--게시판 테이블-->
 	<div class = "TingToday_list">
-		<table class="table table-striped"style="text-align: center; border: 1px solid #dddddd;">
-			<thead>
-				<tr>						
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">글번호</th>
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">제목</th>	
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">작성자</th>
-					<th style="text-align: center;border-right: 1px solid #eeeeee;"">작성일자</th>	
-															
-				</tr>
-			</thead>								
-			<tbody>
-				<c:forEach items="${boardList}" var="list">
-				 <tr>
-				  <td>${list.boardIdx}</td>
-				  <td>
-				  	 <a href="Tingtoday_0_view?boardIdx=${list.boardIdx}">${list.title}</a>
-				  </td>
-				  <td>${list.clientIdx}</td>
-				  <td>${list.regdate}</td>
-				 </tr>
-				</c:forEach>
-
-			
-			</tbody>
-		</table>			
-		<button class="ui teal button" onclick="location.href='Tingtoday_0_write'">글쓰기</button>
+		<form method="post" action="insertBoard">
+			<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required>
+				
+			<div class="form-group">
+				<textarea class="form-control" rows="10" name="content" placeholder="내용을 입력해주세요" required></textarea>
+			</div>
+			<input type="number" name="clientIdx" class="form-control" placeholder="clientIdx" required><br>
+						
+			<button type="submit" class="ui teal button">저장</button>			
+		</form>	
 	</div>
 	</div>
 	</div>

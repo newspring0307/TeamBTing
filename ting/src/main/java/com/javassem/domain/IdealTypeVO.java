@@ -28,8 +28,6 @@ public class IdealTypeVO {
 	private int clientIdx;
 	private int minAge;
 	private int maxAge;
-	private int minSalary;
-	private int maxSalary;
 	private int minDistance;
 	private int maxDistance;
 	private int minHeight;
@@ -58,18 +56,7 @@ public class IdealTypeVO {
 	public void setMaxAge(int maxAge) {
 		this.maxAge = maxAge;
 	}
-	public int getMinSalary() {
-		return minSalary;
-	}
-	public void setMinSalary(int minSalary) {
-		this.minSalary = minSalary;
-	}
-	public int getMaxSalary() {
-		return maxSalary;
-	}
-	public void setMaxSalary(int maxSalary) {
-		this.maxSalary = maxSalary;
-	}
+	
 	public int getMinDistance() {
 		return minDistance;
 	}

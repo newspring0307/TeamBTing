@@ -76,23 +76,10 @@
 			<button class="ui inverted red button ageclick" style="width:100px; font-size:20px;">다음</button>
 		</div>
    </div>
+     
    <div class="row" style="display: none">
 		<div class="col-md-12 section-heading text-center">
 			<h2>Q2</h2>
-		</div>
-		<div class="col-md-05 section-heading text-center">
-			<h1>이상형의 연봉은?</h1>
-		</div>
-		<div class="options__ouvgd text-center">
-		<h2>최소 최대</h2>
-			<input type="text" class="ui inverted red minSalary" style="width:200px; height: 50px; font-size:20px; margin-bottom: 50px;" value="0">만원~
-			<input type="text" class="ui inverted red maxSalary" style="width:200px; height: 50px; font-size:20px; margin-bottom: 50px;" value="0">만원<br>
-			<button class="ui inverted red button salaryclick" style="width:100px; font-size:20px;">다음</button>
-		</div>
-   </div>  
-   <div class="row" style="display: none">
-		<div class="col-md-12 section-heading text-center">
-			<h2>Q3</h2>
 		</div>
 		<div class="col-md-05 section-heading text-center">
 			<h1>이상형과의 거리는?</h1>
@@ -107,7 +94,7 @@
 
    <div class="row" style="display: none">
 		<div class="col-md-12 section-heading text-center">
-			<h2>Q4</h2>
+			<h2>Q3</h2>
 		</div>
 		<div class="col-md-05 section-heading text-center">
 			<h1>이상형의 키는?</h1>
@@ -124,7 +111,7 @@
    
    <div class="row" style="display: none">
 		<div class="col-md-12 section-heading text-center">
-			<h2>Q5</h2>
+			<h2>Q4</h2>
 		</div>
 		<div class="col-md-05 section-heading text-center">
 			<h1>이상형의 종교는?</h1>
@@ -140,7 +127,7 @@
 
    <div class="row" style="display: none">
 	   <div class="col-md-12 section-heading text-center">
-		   <h2>Q6</h2>
+		   <h2>Q5</h2>
 	   </div>
 	   <div class="col-md-05 section-heading text-center">
 		   <h1>이상형의 학력은?</h1>
@@ -159,7 +146,7 @@
    
    <div class="row" style="display: none">	
 	   <div class="col-md-12 section-heading text-center">
-		   <h2>Q7</h2>
+		   <h2>Q6</h2>
 	   </div>
 	   <div class="col-md-05 section-heading text-center">
 		   <h1>이상형의 체형은?</h1>
@@ -175,7 +162,7 @@
 
     <div class="row" style="display: none">	
 	   <div class="col-md-12 section-heading text-center">
-		   <h2>Q8</h2>
+		   <h2>Q7</h2>
 	   </div>
 	   <div class="col-md-05 section-heading text-center">
 		   <h1>이상형의 주량은?</h1>
@@ -191,7 +178,7 @@
 
     <div class="row" style="display: none">	
 	   <div class="col-md-12 section-heading text-center">
-		   <h2>Q9</h2>
+		   <h2>Q8</h2>
 	   </div>
 	   <div class="col-md-05 section-heading text-center">
 		   <h1>당신의 흡연습관은?</h1>

@@ -54,7 +54,7 @@ public class ClientController {
 		m.addAttribute("myDetailInfo", result);
 	}
 	
-	//마이페이지 수정 보기
+	//마이페이지 수정창 보기
 	@RequestMapping("/Client_1_info_update")
 	public void Client_1_info_update(ClientDetailInfoVO vo,Model m,HttpSession session) {
 
@@ -63,8 +63,8 @@ public class ClientController {
 		ClientDetailInfoVO result = clientDetailInfoService.getClientDetailInfo(vo);
 		m.addAttribute("myDetailInfo", result);
 	}
-	//updateIdealType
-	//이상형 정보 입력 메소드
+
+	//마이페이지 수정
 	@RequestMapping("/updateClientDetailInfo")
 	public String UpdateClientDetailInfo(ClientDetailInfoVO vo,HttpSession session) {
 

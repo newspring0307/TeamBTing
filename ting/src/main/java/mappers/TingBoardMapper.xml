@@ -4,34 +4,26 @@
 <mapper namespace="TingBoardDAO">
 
 	<insert id="insertBoard" parameterType="board">
-		<![CDATA[
 		INSERT INTO Board(boardIdx, title, clientIdx, content, regdate, boardTypeIdx)
 		VALUES(Board_seq.nextval,#{title},#{clientIdx},#{content},sysdate,#{boardTypeIdx})	
-		]]>
 	</insert>
 	
 	<update id="updateBoard" parameterType="board">
-		<![CDATA[
 		UPDATE Board SET  
 		TITLE = #{title},
 		CONTENT = #{content}		
 		WHERE boardIdx = #{boardIdx}			
-		]]>
 	</update>	
 	 
 	<delete id="deleteBoard" parameterType="board" >
-		<![CDATA[
 		DELETE BOARD
 		WHERE boardIdx = #{boardIdx}
-		]]>
 	</delete>
 	
 	<select id="getBoard" resultType="board" >
-		<![CDATA[
 		SELECT *
 		FROM BOARD
 		WHERE boardIdx = #{boardIdx}
-		]]>
 	</select>
 	 
 	 
@@ -53,13 +45,11 @@
 		</association>
 	</resultMap>
 	<select id="getBoardList" resultMap="boardNickResult">
-		<![CDATA[
 		select b.boardidx, b.title, b.content,
 		b.regdate,c.nickname
 		from board b, clientdetailinfo c
 		where b.clientidx=c.clientidx
 		
-		]]>
 	</select>
 	 
 	 	

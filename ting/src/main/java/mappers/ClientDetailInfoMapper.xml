@@ -4,35 +4,29 @@
 <mapper namespace="ClientDetailInfoDAO">
 
 	<insert id="insertClientDetailInfo" parameterType="clientDetailInfo">
-		<![CDATA[
 		INSERT INTO clientDetailInfo(clientIdx, name, nickname,gender,
-		job,age,salary,latitude,longitude,religion,education,height,bodyShape,
+		job,age,latitude,longitude,religion,education,height,bodyShape,
 		drink,smoke,selfIntro,lastUpdate)
 		VALUES(#{clientIdx},
 			#{name},#{nickname},#{gender},#{job},
-			#{age},#{salary},#{latitude},#{longitude},#{religion}
+			#{age},#{latitude},#{longitude},#{religion}
 			,#{education},#{height}
 			,#{bodyShape},#{drink},#{smoke},#{selfIntro},sysdate)
-		]]>
 	</insert>
 	
 	<select id="getClientDetailInfo" parameterType="clientDetailInfo" resultType="clientDetailInfo">
-		<![CDATA[
 		SELECT *
 		FROM clientDetailInfo
 		WHERE clientIdx = #{clientIdx}
-		]]>
 	</select>
 	
 	
 
 	
 	<update id="updateClientDetailInfo" parameterType="clientDetailInfo">
-		<![CDATA[
 		UPDATE clientDetailInfo SET
 		nickname = #{nickname},
 		job = #{job},
-		salary = #{salary},
 		religion = #{religion},
 		education = #{education},
 		height = #{height},
@@ -42,14 +36,11 @@
 		selfIntro = #{selfIntro},
 		lastUpdate = sysdate
 		WHERE clientIdx = #{clientIdx}
-		]]>
 	</update>
 	
 	<select id="getClientDetailInfoList" resultType="clientDetailInfo">
-		<![CDATA[
 		SELECT *
 		FROM ClientDetailInfo
-		]]>
 	</select>
 	
 	

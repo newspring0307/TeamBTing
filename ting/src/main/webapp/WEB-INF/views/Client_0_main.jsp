@@ -150,7 +150,7 @@
 									</div>
 									<div class="group">
 										<span class="dt">음주여부</span><span class="dd">
-										${myDetailInfo.drink}병</span>
+										${myDetailInfo.drink}</span>
 									</div>
 									<div class="group">
 										<span class="dt">학력</span><span class="dd">
@@ -164,10 +164,7 @@
 										<span class="dt">종교</span><span class="dd">
 										${myDetailInfo.religion}</span>
 									</div>
-									<div class="group">
-										<span class="dt">연봉</span><span class="dd">
-										${myDetailInfo.salary}</span>
-									</div>
+									
 
 								</div>
 							</div>

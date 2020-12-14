@@ -253,10 +253,10 @@
 								<div class="wrp">
 									<select id="factFormField-Body" name="bodyShape"><option
 											value="${myDetailInfo.bodyShape}">${myDetailInfo.bodyShape}</option>
-										<option value="thin">날씬함</option>
-										<option value="normal">정상</option>
-										<option value="muscle">근육질의</option>
-										<option value="fat">통통한</option></select>
+										<option value="날씬함">날씬함</option>
+										<option value="보통">보통</option>
+										<option value="근육질">근육질</option>
+										<option value="통통한">통통한</option></select>
 								</div>
 							</div>
 							<div class="field select single smoker">
@@ -264,10 +264,10 @@
 								<div class="wrp">
 									<select id="factFormField-Smoker" name="smoke"><option
 											value="${myDetailInfo.smoke}">${myDetailInfo.smoke}</option>
-										<option value="none">비흡연</option>
-										<option value="sometimes">가끔</option>
-										<option value="often">종종</option>
-										<option value="always">매일</option></select>
+										<option value="비흡연">비흡연</option>
+										<option value="가끔">가끔</option>
+										<option value="종종">종종</option>
+										<option value="매일">매일</option></select>
 								</div>
 							</div>
 							<div class="field select single alcohol">
@@ -275,10 +275,10 @@
 								<div class="wrp">
 									<select id="factFormField-Alcohol" name="drink"><option
 											value="${myDetailInfo.drink}">${myDetailInfo.drink}</option>
-										<option value="0">안 마심</option>
-										<option value="0.5">1병 이하</option>
-										<option value="1.5">1병 - 2병</option>
-										<option value="2.5">2병 초과</option></select>
+										<option value="안 마심">안 마심</option>
+										<option value="1병 이하">1병 이하</option>
+										<option value="1병 - 2병">1병 - 2병</option>
+										<option value="2병 초과">2병 초과</option></select>
 								</div>
 							</div>
 							<div class="field select single education">
@@ -286,9 +286,9 @@
 								<div class="wrp">
 									<select id="factFormField-Education" name="education"><option
 											value="${myDetailInfo.education}">${myDetailInfo.education}</option>
-										<option value="중졸">중고등학교</option>
-										<option value="고졸">고등학교</option>
-										<option value="대졸">대학/대학교</option>
+										<option value="중졸">중졸</option>
+										<option value="고졸">고졸</option>
+										<option value="대졸">대졸</option>
 										<option value="석박사">석박사</option></select>
 								</div>
 							</div>
@@ -313,27 +313,15 @@
 								<div class="wrp">
 									<select id="factFormField-Relationship status"
 										name="religion"><option value="${myDetailInfo.religion}">${myDetailInfo.religion}</option>
+										<option value="무교">무교</option>
 										<option value="기독교">기독교</option>
 										<option value="불교">불교</option>
 										<option value="천주교">천주교</option>
-										<option value="힌두교">힌두교</option>
-										<option value="크리스찬교">크리스찬교</option>
-										<option value="무교">무교</option></select>
+										<option value="그외">그외</option></select>
 								</div>
 							</div>
 							
-							<div class="field select single relationshipstatus">
-								<label for="factFormField-Relationship status">연봉</label>
-								<div class="wrp">
-									<select id="factFormField-Relationship status"
-										name="salary"><option value="${myDetailInfo.salary}">${myDetailInfo.salary}</option>
-										<option value=1000>2000이하</option>
-										<option value=2500>2000-3000</option>
-										<option value=4000>3000-5000</option>
-										<option value=6500>5000-8000</option>
-										<option value=0>비공개</option></select>
-								</div>
-							</div>
+							
 							
 						
 						</div>

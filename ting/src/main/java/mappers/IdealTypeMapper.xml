@@ -4,24 +4,19 @@
 <mapper namespace="IdealTypeDAO">
 
 	<insert id="insertIdealType" parameterType="idealType">
-		<![CDATA[
-		INSERT INTO idealType(clientIdx, minAge, maxAge,minSalary,
-		maxSalary,minDistance,maxDistance,minHeight,maxHeight,religion,education,bodyShape,
+		INSERT INTO idealType(clientIdx, minAge, maxAge,minDistance,maxDistance,minHeight,maxHeight,religion,education,bodyShape,
 		drink,smoke,lastUpdate)
 		VALUES(#{clientIdx},
-			#{minAge},#{maxAge},#{minSalary},#{maxSalary},
+			#{minAge},#{maxAge},
 			#{minDistance},#{maxDistance},#{minHeight},#{maxHeight},#{religion}
 			,#{education}
 			,#{bodyShape},#{drink},#{smoke},sysdate)
-		]]>
 	</insert>
 	
 	<select id="getIdealType" parameterType="idealType" resultType="idealType">
-		<![CDATA[
 		SELECT *
 		FROM idealType
 		WHERE clientIdx = #{clientIdx}
-		]]>
 	</select>
 	
 	

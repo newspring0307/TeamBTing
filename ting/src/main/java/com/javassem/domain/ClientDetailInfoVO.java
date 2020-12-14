@@ -3,14 +3,12 @@ package com.javassem.domain;
 import java.util.Date;
 
 public class ClientDetailInfoVO {
-
 	private int clientIdx;
 	private String name;
 	private String nickname;
 	private String gender;
 	private String job;
 	private int age;
-	private String salary;
 
 	private String latitude;
 	private String longitude;
@@ -24,7 +22,6 @@ public class ClientDetailInfoVO {
 	private int premiumIdx;
 	private Date lastUpdate;
 	private String selfIntro;
-	
 	public int getClientIdx() {
 		return clientIdx;
 	}
@@ -73,13 +70,6 @@ public class ClientDetailInfoVO {
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
-	public String getSalary() {
-		return salary;
-	}
-	public void setSalary(String salary) {
-		this.salary = salary;
-	}
-
 	public String getReligion() {
 		return religion;
 	}
@@ -140,5 +130,8 @@ public class ClientDetailInfoVO {
 	public void setSelfIntro(String selfIntro) {
 		this.selfIntro = selfIntro;
 	}
+	
+	
+	
 
 }

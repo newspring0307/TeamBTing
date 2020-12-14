@@ -52,6 +52,7 @@
 		    </div>
 	</header>
 <!---------------------------------- header end ---------------------------------->
+<!---------------------------------- header end ---------------------------------->
 
 <section id="fh5co-counters" style="background-image: url(resources/images/main_back.jpg);" data-stellar-background-ratio="0.5">
 		<div class="fh5co-overlay"></div>

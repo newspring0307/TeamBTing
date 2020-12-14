@@ -5,14 +5,14 @@
 
 	<insert id="insertBoard" parameterType="board">
 		<![CDATA[
-		INSERT INTO Board(boardIdx, title, clientIdx, content, regdate, boardTypeIdx)
-		VALUES(Board_seq.nextval,#{title},#{clientIdx},#{content},sysdate,#{boardTypeIdx})	
+		INSERT INTO snsBoard(boardIdx, title, clientIdx, content, regdate)
+		VALUES(snsBoard_seq.nextval,#{title},#{clientIdx},#{content},sysdate)	
 		]]>
-	</insert>
+	</insert> 
 	
 	<update id="updateBoard" parameterType="board">
 		<![CDATA[
-		UPDATE Board SET  
+		UPDATE snsBoard SET 
 		TITLE = #{title},
 		CONTENT = #{content}		
 		WHERE boardIdx = #{boardIdx}			
@@ -21,7 +21,7 @@
 	 
 	<delete id="deleteBoard" parameterType="board" >
 		<![CDATA[
-		DELETE BOARD
+		DELETE snsBoard
 		WHERE boardIdx = #{boardIdx}
 		]]>
 	</delete>
@@ -29,7 +29,7 @@
 	<select id="getBoard" resultType="board" >
 		<![CDATA[
 		SELECT *
-		FROM BOARD
+		FROM snsBoard
 		WHERE boardIdx = #{boardIdx}
 		]]>
 	</select>
@@ -37,7 +37,7 @@
 	<select id="getBoardList" resultType="board">
 		<![CDATA[
 		SELECT *
-		FROM Board
+		FROM snsBoard
 		ORDER BY boardIdx
 		
 		]]>

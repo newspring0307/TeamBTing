@@ -88,9 +88,12 @@ public class ClientInfoController {
 		System.out.println(clientInfoVO.toString());
 
 		int registerRes = clientInfoService.register(clientInfoVO);
+		ClientInfoVO loginCheck = clientInfoService.login(clientInfoVO);
 		System.out.println(registerRes);
 		System.out.println("registerRes");
-		
+		session.setAttribute("clientIdx", loginCheck.getClientIdx());
+		session.setAttribute("UID", loginCheck.getEmail());
+		System.out.println("session"+session.getAttribute("clientIdx"));
 		return "redirect:/Client_4_detailInsertStart";
 		/* return "redirect:/login"; */
 		

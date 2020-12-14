@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,15 +35,21 @@
 		       </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		                  <li class="active"><a href="index.jsp" data-nav-section="about"><span>팅이란?</span></a></li>
-		            <li><a href="Main_company_1_team" data-nav-section="team"><span>team</span></a></li>
-		            <li><a href="Tingtoday_0_main" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
-		            <li><a href="Premium_0_main" data-nav-section="premium"><span>프리미엄</span></a></li>
-		            <li><a href="Fun_0_main" data-nav-section="fun"><span>FUN</span></a></li>
-		            <li><a href="Client_2_Ting_main" data-nav-section="contact"><span>문의</span></a></li>
-					<li><button class="ui inverted teal button" id="login">로그인</button></li>
-					<li><button class="ui inverted teal button" id="register">회원가입</button></li>
-			      </ul>
+                  <li class="active"><a href="index.jsp"
+                     data-nav-section="about"><span>팅이란?</span></a></li>
+                  <li><a href="Main_company_1_team" data-nav-section="team"><span>team</span></a></li>
+                  <li><a href="Tingtoday_0_main" data-nav-section="tingtoday"><span>팅투하자!</span></a></li>
+                  <li><a href="Premium_0_main" data-nav-section="premium"><span>프리미엄</span></a></li>
+                  <li><a href="Fun_0_main" data-nav-section="fun"><span>FUN</span></a></li>
+                  <li><a href="Client_2_Ting_main" data-nav-section="contact"><span>문의</span></a></li>
+                  <c:if test="${sessionScope.UID eq null}">
+                     <li><button class="ui inverted teal button" id="login">로그인</button></li>
+                     <li><button class="ui inverted teal button" id="register">회원가입</button></li>
+                  </c:if>
+                  <c:if test="${sessionScope.UID ne null}">
+                     <li><button class="ui inverted teal button" id="logout">로그아웃</button></li>
+                  </c:if>
+               </ul>
 		        </div>
 		    </div>
 	</header>

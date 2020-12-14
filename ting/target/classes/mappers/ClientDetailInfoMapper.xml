@@ -45,5 +45,12 @@
 		]]>
 	</update>
 	
+	<select id="getClientDetailInfoList" resultType="clientDetailInfo">
+		<![CDATA[
+		SELECT *
+		FROM ClientDetailInfo
+		]]>
+	</select>
+	
 	
 </mapper>

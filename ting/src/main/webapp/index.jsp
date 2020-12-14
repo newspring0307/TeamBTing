@@ -63,7 +63,7 @@
 						<div class="col-md-8 col-md-offset-2" >
 							<h1 class="to-animate"  >매일 이상형이 찾아오다</h1>
 							<h2 class="to-animate">ting</h2><br>
-							<a href="Premium_0_main_Test" class="btn btn-primary"><h2 style="color:gray">선생님 검토 임시 마이페이지</h2></a>
+							<a href="Client_2_Ting_main" class="btn btn-primary"><h2 style="color:gray">선생님 검토 임시 마이페이지</h2></a>
 						</div>
 					</div>
 				</div>

@@ -38,6 +38,14 @@
 		WHERE clientIdx = #{clientIdx}
 	</update>
 	
+	
+	<update id="updatePhotoClientDetailInfo" parameterType="clientDetailInfo">
+		UPDATE clientDetailInfo SET
+		
+		photo = #{photo}
+		WHERE clientIdx = #{clientIdx}
+	</update>
+	
 	<select id="getClientDetailInfoList" resultType="clientDetailInfo">
 		SELECT *
 		FROM ClientDetailInfo

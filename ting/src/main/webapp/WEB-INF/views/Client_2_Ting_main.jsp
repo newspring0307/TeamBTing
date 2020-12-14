@@ -80,7 +80,7 @@
 			<c:forEach items="${clientDetailInfo}" var="clientDetailInfo">
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
-						<img src="resources/images/heart.png" alt="Ashok9701009" style="height:300px; width: 100%;">
+						<img src="resources/img_photo/${clientDetailInfo.photo}" alt="Ashok9701009" style="height:300px; width: 100%;">
 						<div class="cnt"><h2>${clientDetailInfo.name},25</h2>				
 								<span>저는 고양이를 매우 좋아하는 남자입니당.</span>
 						<input class="btn btn-primary btn-lg" value="더 알아보기" type="button" onclick="location.href = 'Client_2_Ting_like?clientIdx=${clientDetailInfo.clientIdx }'"></div>

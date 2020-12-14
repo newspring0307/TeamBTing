@@ -31,8 +31,18 @@ public class ClientController {
 		vo.setClientIdx((int)session.getAttribute("clientIdx"));
 		System.out.println("실행되는지확인");
 		clientDetailInfoService.insertClientDetailInfo(vo);
-		return "redirect:/Ideal_0_idealTypeInsert";
+		return "redirect:/Client_4_detailInsert2";
 	}
+	
+	//고객 사진 입력 메소드
+		@RequestMapping("/updatePhotoClientDetailInfo")
+		public String updatePhotoClientDetailInfo(ClientDetailInfoVO vo,HttpSession session) {
+
+			vo.setClientIdx((int)session.getAttribute("clientIdx"));
+			System.out.println(vo.getPhoto());
+			clientDetailInfoService.updatePhotoClientDetailInfo(vo);
+			return "redirect:/Ideal_0_idealTypeInsert";
+		}
 	
 	//이상형 정보 입력 메소드
 	@RequestMapping("/insertidealType")

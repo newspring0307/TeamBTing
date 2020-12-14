@@ -107,7 +107,7 @@
 							<div class="box profileHeader">
 								<article class="profileInfo">
 									<a class="imgWrp" target="_blank" style="background-color: #D8D8D8 " href="">
-									<img src="images/myboy3.jpg" alt=""></a>
+									<img src="resources/img_photo/${myDetailInfo.photo}" alt=""></a>
 									<div class="intro">
 									
 										<h1>이름 : ${myDetailInfo.name}</h1><br>

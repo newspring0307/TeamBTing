@@ -1,6 +1,10 @@
 package com.javassem.domain;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
+
+import org.springframework.web.multipart.MultipartFile;
 
 public class ClientDetailInfoVO {
 	private int clientIdx;
@@ -22,6 +26,41 @@ public class ClientDetailInfoVO {
 	private int premiumIdx;
 	private Date lastUpdate;
 	private String selfIntro;
+	
+
+	
+	//******************** 파일 추가를 위해 삽입 *****************************
+		MultipartFile file;	// write.jsp에 파일첨부시 name="file"과 동일한 변수명
+		
+		public MultipartFile getFile() {
+			return file;
+		}
+		public void setFile(MultipartFile file) {
+			this.file = file;
+			
+			// 업로드 파일 접근
+			if(! file.isEmpty()){
+				System.out.println("파일시도");
+				this.photo = file.getOriginalFilename();
+				
+				// 해당 경로로 변경
+					File f = new File("C:\\Users\\Kiha\\git\\TeamBTing_v1\\ting\\src\\main\\webapp\\resources\\img_photo\\"+ photo);
+					//				File f = new File("D:\\다운로드\\workspace\\ws_03\\shoppingmall\\src\\main\\webapp\\resources\\upload\\"+ product_fname);
+				try {
+					System.out.println("사진시도");
+					file.transferTo(f);
+					
+				} catch (IllegalStateException e) {				
+					e.printStackTrace();
+				} catch (IOException e) {
+					
+					e.printStackTrace();
+				}
+			}
+		}
+
+		//******************** 파일 추가를 위해 삽입 *****************************
+	
 	public int getClientIdx() {
 		return clientIdx;
 	}

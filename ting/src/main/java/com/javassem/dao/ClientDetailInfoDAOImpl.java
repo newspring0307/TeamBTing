@@ -37,4 +37,10 @@ public class ClientDetailInfoDAOImpl implements ClientDetailInfoDAO{
 		System.out.println("===> Mybatis getBoardList() 호출");
 		return mybatis.selectList("ClientDetailInfoDAO.getClientDetailInfoList", vo);
 	}
+
+
+	public void updatePhotoClientDetailInfo(ClientDetailInfoVO vo) {
+		mybatis.update("ClientDetailInfoDAO.updatePhotoClientDetailInfo", vo);
+		
+	}
 }

@@ -9,6 +9,9 @@ public interface ClientDetailInfoDAO {
 
 	// 글 수정
 	public void updateClientDetailInfo(ClientDetailInfoVO vo);
+	
+	//사진 추가
+	public void updatePhotoClientDetailInfo(ClientDetailInfoVO vo);
 
 	// 글 삭제
 	public void deleteClientDetailInfo(ClientDetailInfoVO vo);

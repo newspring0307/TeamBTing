@@ -70,6 +70,7 @@
 			<h1>당신의 이름은?</h1>
 		</div>
 		<div class="options__ouvgd text-center">
+		
 			<input type="text" class="ui inverted red name" style="width:200px; height: 50px; font-size:20px; margin-bottom: 50px;" value=""><br>
 			<button class="ui inverted red button nameclick" style="width:100px; font-size:20px;">다음</button>
 		</div>
@@ -217,6 +218,8 @@
 	   </div>
    </div>
    
+   
+   
    <div class="row" style="display: none">
 		<div class="col-md-12 section-heading text-center">
 			<h2>Q12</h2>
@@ -230,6 +233,8 @@
 			<button class="ui inverted red button selfIntroclick" style="width:100px; font-size:20px;">다음</button>
 		</div>
 	</div> 
+	
+	
    
 
    

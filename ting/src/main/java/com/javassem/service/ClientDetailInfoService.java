@@ -10,6 +10,9 @@ public interface ClientDetailInfoService {
 
 	// 글 수정
 	void updateClientDetailInfo(ClientDetailInfoVO vo);
+	
+	//사진 추가
+	void updatePhotoClientDetailInfo(ClientDetailInfoVO vo);
 
 	// 글 삭제
 	void deleteClientDetailInfo(ClientDetailInfoVO vo);

@@ -35,4 +35,10 @@ public class ClientDetailInfoServiceImpl implements ClientDetailInfoService{
 	public List<ClientDetailInfoVO> getClientDetailInfoList(ClientDetailInfoVO vo) {
 		return clientDetailInfoDAO.getClientDetailInfoList(vo);
 	}
+
+	@Override
+	public void updatePhotoClientDetailInfo(ClientDetailInfoVO vo) {
+		clientDetailInfoDAO.updatePhotoClientDetailInfo(vo);
+		
+	}
 }

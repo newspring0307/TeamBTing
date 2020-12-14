@@ -67,6 +67,7 @@
 			<h2>Q1</h2>
 		</div>
 		<div class="col-md-05 section-heading text-center">
+			<h1>이제 이상형을 작성해볼까요?</h1>
 			<h1>이상형의 나이는?</h1>
 		</div>
 		<div class="options__ouvgd text-center">
@@ -117,11 +118,11 @@
 			<h1>이상형의 종교는?</h1>
 		</div>
 		<div class="options__ouvgd text-center">
-			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="none">무교</button><br>
-			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="christ">기독교</button><br>
-			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="cath"">천주교</button><br>
-			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="budda">불교</button><br>
-			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="none">상관없음</button><br>
+			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="무교">무교</button><br>
+			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="기독교">기독교</button><br>
+			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="천주교"">천주교</button><br>
+			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="불교">불교</button><br>
+			<button class="ui inverted red button religion" style="width:400px; font-size:20px;" value="상관없음">상관없음</button><br>
 		</div>
 	</div>
 
@@ -133,11 +134,11 @@
 		   <h1>이상형의 학력은?</h1>
 	   </div>
 	   <div class="options__ouvgd text-center">
-		<button class="ui inverted red button education" style="width:400px;  font-size:20px;" value="midd">중졸</button><br>
-		   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="high">고졸</button><br>
-		   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="univ">대졸</button><br>
-		   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="doct">석박사</button><br>
-	   	   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="none">상관없음</button><br>
+		<button class="ui inverted red button education" style="width:400px;  font-size:20px;" value="중졸">중졸</button><br>
+		   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="고졸">고졸</button><br>
+		   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="대졸">대졸</button><br>
+		   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="석박사">석박사</button><br>
+	   	   <button class="ui inverted red button education" style="width:400px; font-size:20px;" value="상관없음">상관없음</button><br>
 		</div>
    </div>
    
@@ -152,11 +153,11 @@
 		   <h1>이상형의 체형은?</h1>
 	   </div>
 	   <div class="options__ouvgd text-center">
-		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="thin">마름</button><br>
-		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="normal">보통</button><br>
-		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="muscle">근육질</button><br>
-		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="fat">뚱뚱</button><br>
-	   		<button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;" value="none">상관없음</button><br>
+		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="마름">마름</button><br>
+		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="보통">보통</button><br>
+		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="근육질">근육질</button><br>
+		   <button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;"value="통통한">통통한</button><br>
+	   		<button class="ui inverted red button bodyShape" style="width:400px; font-size:20px;" value="상관없음">상관없음</button><br>
 		</div>
    </div>
 
@@ -168,11 +169,11 @@
 		   <h1>이상형의 주량은?</h1>
 	   </div>
 	   <div class="options__ouvgd text-center">
-		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="0">안 마심</button><br>
-		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="0.5">1병 이하</button><br>
-		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="1.5">1병 - 2병</button><br>
-		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="2.5">2병 초과</button><br>
-	   		<button class="ui inverted red button drink" style="width:400px; font-size:20px;" value="none">상관없음</button><br>
+		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="안 마심">안 마심</button><br>
+		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="1병 이하">1병 이하</button><br>
+		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="1병 -2병">1병 -2병</button><br>
+		   <button class="ui inverted red button drink" style="width:400px; font-size:20px;"value="2병 초과">2병 초과</button><br>
+	   		<button class="ui inverted red button drink" style="width:400px; font-size:20px;" value="상관없음">상관없음</button><br>
 		</div>
    </div>
 
@@ -184,11 +185,11 @@
 		   <h1>당신의 흡연습관은?</h1>
 	   </div>
 	   <div class="options__ouvgd text-center">
-		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="none"">비흡연</button><br>
-		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="sometimes">가끔</button><br>
-		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="often">종종</button><br>
-		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="always">매일</button><br>
-	   		<button class="ui inverted red button smoke" style="width:400px; font-size:20px;" value="none">상관없음</button><br>
+		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="비흡연"">비흡연</button><br>
+		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="가끔">가끔</button><br>
+		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="종종">종종</button><br>
+		   <button class="ui inverted red button smoke" style="width:400px; font-size:20px;"value="매일">매일</button><br>
+	   		<button class="ui inverted red button smoke" style="width:400px; font-size:20px;" value="상관없음">상관없음</button><br>
 		</div>
    </div>
    

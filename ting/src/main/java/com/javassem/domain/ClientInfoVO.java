@@ -1,9 +1,9 @@
 package com.javassem.domain;
 /*
-	clientIdx varchar2(30) NOT NULL,
-    email varchar2(50),
+	clientIdx number(10) NOT NULL,
+    email varchar2(40),
     password varchar2(30) NOT NULL,
-    phone varchar2(50) NOT NULL,
+    phone varchar2(20) NOT NULL,
     regdate date,
  */
 public class ClientInfoVO {

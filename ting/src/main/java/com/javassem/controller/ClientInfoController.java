@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -46,14 +47,16 @@ public class ClientInfoController {
 	public String login(HttpSession session, ClientInfoVO clientInfoVO) throws IOException {
 		System.out.println("login request, id : " + clientInfoVO.getEmail());
 
-		int loginCheck = 0;
+
 
 		// 로그인 아이디, 패스워드 넘겨서 데이터베이스 조회, 로그인 정보를 돌려 받는다. 아이디 저장해야함 받은 아이디로 저장
-		loginCheck = clientInfoService.login(clientInfoVO);
+		ClientInfoVO loginCheck = clientInfoService.login(clientInfoVO);
 		
 		// 로긘이 성공한다면 세션에 UID 설정 후 메인으로 보낸다
-		if (loginCheck == 1) {
-			session.setAttribute("UID", clientInfoVO.getEmail());
+		if (!ObjectUtils.isEmpty(loginCheck)) {
+			session.setAttribute("UID", loginCheck.getEmail());
+			session.setAttribute("clientIdx", loginCheck.getClientIdx());
+			System.out.println(session.getAttribute("clientIdx"));
 			return "redirect:/";
 		} else {
 			// 로긘 실패하면 Main_login_0

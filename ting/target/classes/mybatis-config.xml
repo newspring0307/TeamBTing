@@ -6,9 +6,10 @@
 
 	<!-- Alias 설정 -->
 	<typeAliases>
-		<typeAlias alias="board" type="com.javassem.domain.BoardVO" />
+		<typeAlias alias="board1" type="com.javassem.domain.BoardVO" />
 		<typeAlias alias="clientDetailInfo" type="com.javassem.domain.ClientDetailInfoVO" />
 		<typeAlias alias="idealType" type="com.javassem.domain.IdealTypeVO" />	
+		<typeAlias alias="board" type="com.javassem.domain.TingBoardVO"/>
 	</typeAliases>
 	
 

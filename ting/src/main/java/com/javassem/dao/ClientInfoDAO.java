@@ -8,7 +8,7 @@ import com.javassem.domain.ClientInfoVO;
 public interface ClientInfoDAO {
 
 	// 사용자 정보 조회 카운트
-    int login(ClientInfoVO clientInfoVO);
+	ClientInfoVO login(ClientInfoVO clientInfoVO);
 
     // 사용자 한명 Insert
     int register(ClientInfoVO clientInfoVO);

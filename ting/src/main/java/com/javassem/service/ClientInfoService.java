@@ -14,14 +14,11 @@ public class ClientInfoService {
 	@Autowired
 	private ClientInfoDAO clientInfoDAO;
 	
-	public int login(ClientInfoVO clientInfoVO) {
+	public ClientInfoVO login(ClientInfoVO clientInfoVO) {
 		// VO 넘겨서 로그인 사용자 일치하는 수를 정수로 받음[1,0]
-		int login = clientInfoDAO.login(clientInfoVO);
+		ClientInfoVO login = clientInfoDAO.login(clientInfoVO);
 		
-		if(login == 1)
-			return 1;
-		else
-			return 0;
+		return login;
 	}
 	
 	public int register(ClientInfoVO clientInfoVO) {

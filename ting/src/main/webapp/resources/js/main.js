@@ -144,6 +144,10 @@
 		location.href='Premium_0_main';
 	});
 
+
+	$('#logout').click(function() {
+		location.href = 'logout';
+	});
 	
 
 

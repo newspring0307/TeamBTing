@@ -5,8 +5,8 @@
   
 <mapper namespace="com.javassem.dao.ClientInfoDAO" >
 	<!-- 로그인 -->
-	<select id="login" parameterType="com.javassem.domain.ClientInfoVO" resultType="int">
-		SELECT COUNT(*) 
+	<select id="login" parameterType="com.javassem.domain.ClientInfoVO" resultType="com.javassem.domain.ClientInfoVO">
+		SELECT * 
 		FROM clientInfo 
 		WHERE email = #{email} AND password = #{password}
 	</select>

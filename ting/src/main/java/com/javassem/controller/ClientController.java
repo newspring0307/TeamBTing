@@ -25,9 +25,7 @@ public class ClientController {
 	//고객 상세정보 입력 메소드
 	@RequestMapping("/insertClientDetailInfo")
 	public String insertClientDetailInfo(ClientDetailInfoVO vo,HttpSession session) {
-		//실험용 -- 로그인 구현 후 제거
-		session.setAttribute("clientIdx", 1);
-		//-------------------------------------
+
 		vo.setClientIdx((int)session.getAttribute("clientIdx"));
 		System.out.println("실행되는지확인");
 		clientDetailInfoService.insertClientDetailInfo(vo);
@@ -37,9 +35,7 @@ public class ClientController {
 	//이상형 정보 입력 메소드
 	@RequestMapping("/insertidealType")
 	public String insertidealType(IdealTypeVO vo,HttpSession session) {
-		//실험용 -- 로그인 구현 후 제거
-		session.setAttribute("clientIdx", 1);
-		//-------------------------------------
+
 		vo.setClientIdx((int)session.getAttribute("clientIdx"));
 		System.out.println("실행되는지확인2");
 		idealTypeService.insertIdealType(vo);
@@ -49,9 +45,7 @@ public class ClientController {
 	//마이페이지 보기 메소드
 	@RequestMapping("/Client_0_main")
 	public void Client_0_main(ClientDetailInfoVO vo,Model m,HttpSession session) {
-		//실험용 -- 로그인 구현 후 제거
-		session.setAttribute("clientIdx", 1);
-		//-------------------------------------
+
 		vo.setClientIdx((int)session.getAttribute("clientIdx"));
 		System.out.println("실행되는지확인3");
 		ClientDetailInfoVO result = clientDetailInfoService.getClientDetailInfo(vo);
@@ -61,9 +55,7 @@ public class ClientController {
 	//마이페이지 수정 보기
 	@RequestMapping("/Client_1_info_update")
 	public void Client_1_info_update(ClientDetailInfoVO vo,Model m,HttpSession session) {
-		//실험용 -- 로그인 구현 후 제거
-		session.setAttribute("clientIdx", 1);
-		//-------------------------------------
+
 		vo.setClientIdx((int)session.getAttribute("clientIdx"));
 		System.out.println("실행되는지확인3");
 		ClientDetailInfoVO result = clientDetailInfoService.getClientDetailInfo(vo);
@@ -73,9 +65,7 @@ public class ClientController {
 	//이상형 정보 입력 메소드
 	@RequestMapping("/updateClientDetailInfo")
 	public String UpdateClientDetailInfo(ClientDetailInfoVO vo,HttpSession session) {
-		//실험용 -- 로그인 구현 후 제거
-		session.setAttribute("clientIdx", 1);
-		//-------------------------------------
+
 		vo.setClientIdx((int)session.getAttribute("clientIdx"));
 		System.out.println("실행되는지확인2");
 		clientDetailInfoService.updateClientDetailInfo(vo);;

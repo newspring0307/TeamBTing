@@ -34,11 +34,30 @@
 		]]>
 	</select>
 	 
-	<select id="getBoardList" resultType="board">
+	 
+	 
+	 
+	 <resultMap type="board" id="boardNickResult">
+		<id property="clientIdx" column="clientIdx" />
+		<result property="boardIdx" column="boardIdx" />
+		<result property="title" column="title" />
+		<result property="content" column="content" />
+		<result property="regdate" column="regdate" />
+		<!--property="sphone" getSphone() column="sabun" => s.sabun sabun javaType="sphonevo" 
+			: 참조하는 실제 VO -->
+		<association property="clientDetailInfo" column="clientIdx"
+			javaType="clientDetailInfo">
+			<id property="clientIdx" column="clientIdx" />
+			<result property="nickname" column="nickname" />
+
+		</association>
+	</resultMap>
+	<select id="getBoardList" resultMap="boardNickResult">
 		<![CDATA[
-		SELECT *
-		FROM Board
-		ORDER BY boardIdx
+		select b.boardidx, b.title, b.content,
+		b.regdate,c.nickname
+		from board b, clientdetailinfo c
+		where b.clientidx=c.clientidx
 		
 		]]>
 	</select>

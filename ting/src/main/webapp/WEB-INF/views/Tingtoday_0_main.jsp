@@ -123,7 +123,7 @@
 				  <td>
 				  	 <a href="Tingtoday_0_view?boardIdx=${list.boardIdx}">${list.title}</a>
 				  </td>
-				  <td>${list.clientIdx}</td>
+				  <td>${list.clientDetailInfo.nickname}</td>
 				  <td>${list.regdate}</td>
 				 </tr>
 				</c:forEach>

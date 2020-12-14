@@ -18,8 +18,15 @@ public class TingBoardVO {
 	private String content;
 	private Date regdate;
 	private int boardTypeIdx;
+	private ClientDetailInfoVO clientDetailInfo;
 	
 	 
+	public ClientDetailInfoVO getClientDetailInfo() {
+		return clientDetailInfo;
+	}
+	public void setClientDetailInfo(ClientDetailInfoVO clientDetailInfo) {
+		this.clientDetailInfo = clientDetailInfo;
+	}
 	public int getBoardIdx() {
 		return boardIdx;
 	}

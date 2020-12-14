@@ -12,12 +12,19 @@ public class BoardVO {
 	private Date regDate;
 	private int cnt;
 	private String dat;
+	private ClientDetailInfoVO clientDetailInfo;
 	
 	
 	
 	
 	
 	
+	public ClientDetailInfoVO getClientDetailInfo() {
+		return clientDetailInfo;
+	}
+	public void setClientDetailInfo(ClientDetailInfoVO clientDetailInfo) {
+		this.clientDetailInfo = clientDetailInfo;
+	}
 	public BoardVO() {
 	
 	}

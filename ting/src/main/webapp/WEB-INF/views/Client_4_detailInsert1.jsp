@@ -262,7 +262,7 @@
 			<input type="hidden" name="latitude" id="latitude" value="">
 			<input type="hidden" name="longitude" id="longitude" value="">
 			<input type="hidden" name="selfIntro" id="selfIntro" value="">
-			<button class="btn btn-primary" type="submit" >저장</button>
+			<button class="btn btn-primary" type="submit" >다음</button>
 	   </form>
 	   </div>
    </div>

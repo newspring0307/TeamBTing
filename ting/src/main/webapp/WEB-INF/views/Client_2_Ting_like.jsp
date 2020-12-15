@@ -109,9 +109,9 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate" style="background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); border:white; border-radius: 5px;">
-						<img src="resources/images/cat.jpg" alt="Ashok9701009" style="height:300px; width: 100%;">
-						<div class="cnt"><h2>나</h2>				
-								<span>저는 공유를 닮은 멋진 남자를 찾고있어요</span>
+						<img src="resources/images/heart.png" alt="Ashok9701009" style="height:300px; width: 100%;">
+						<div class="cnt"><h2>${myClientDetailInfo.name},${myClientDetailInfo.age}</h2>				
+								<span>${myClientDetailInfo.selfIntro}</span>
 						</div>
 						<!-- 나중에 변수로 넣을 것 -->
 					</div>
@@ -136,9 +136,9 @@
 				</div>
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate" style="background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); border:white; border-radius: 5px;">
-						<img src="resources/images/question.png" alt="Ashok9701009" style="height:300px; width: 100%;">
-						<div class="cnt"><h2>${clientDetailInfo.name},25</h2>				
-								<span>저는 고양이를 매우 좋아하는 남자입니당.</span>
+						<img src="resources/images/heart.png" alt="Ashok9701009" style="height:300px; width: 100%;">
+						<div class="cnt"><h2>${clientDetailInfo.name},${clientDetailInfo.age}</h2>				
+								<span>${clientDetailInfo.selfIntro}</span>
 					</div>
 				</div>
 			</div>

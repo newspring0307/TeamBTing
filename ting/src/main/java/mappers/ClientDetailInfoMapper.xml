@@ -40,7 +40,7 @@
 	
 	<select id="getClientDetailInfoList" resultType="clientDetailInfo">
 		SELECT *
-		FROM ClientDetailInfo
+		FROM ClientDetailInfo where clientIdx != #{clientIdx}
 	</select>
 	
 	

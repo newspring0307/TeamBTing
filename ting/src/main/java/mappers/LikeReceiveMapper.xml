@@ -4,8 +4,8 @@
 <mapper namespace="LikeReceiveDAO">
 
 	<insert id="insertLikeReceive" parameterType="likeReceive">
-		INSERT INTO likeReceive(likeIdx, clientIdx, sendIdx,receiveTime)
-		VALUES(likeReceive_seq.nextval,#{clientIdx},#{sendIdx},SYSDATE)
+		INSERT INTO likeReceive(likeIdx, clientIdx, sendIdx,successOrNot,receiveTime)
+		VALUES(likeReceive_seq.nextval,#{clientIdx},#{sendIdx},0,SYSDATE)
 	</insert>
 	
 	<select id="getLikeReceiveList" parameterType="likeReceive" resultType="clientDetailInfo">

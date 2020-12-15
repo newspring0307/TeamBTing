@@ -21,6 +21,22 @@ public class LikeReceiveVO {
 	private int likeIdx;
 	private int clientIdx;
 	private int sendIdx;
+	private Date receiveTime;
+	public Date getReceiveTime() {
+		return receiveTime;
+	}
+	public void setReceiveTime(Date receiveTime) {
+		this.receiveTime = receiveTime;
+	}
+	private int successOrNot;
+	
+	
+	public int getSuccessOrNot() {
+		return successOrNot;
+	}
+	public void setSuccessOrNot(int successOrNot) {
+		this.successOrNot = successOrNot;
+	}
 	private Date reCeiveTime;
 	
 	

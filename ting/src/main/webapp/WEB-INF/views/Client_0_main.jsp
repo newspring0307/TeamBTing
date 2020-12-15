@@ -89,7 +89,7 @@
 							<br><h2 style="color:white">새로운 메시지</h2></span></a></li>
 
 					<li class="primary">
-					<a class="notification" href="Client_2_Ting_like" ><br><i class="fh5co-intro-icon icon-heart"></i>
+					<a class="notification" href="Client_5_likeReceived" ><br><i class="fh5co-intro-icon icon-heart"></i>
 							<span class="inner"><br><span class="count">5</span>
 							<br><h2 style="color:white">나의 좋아요 ♥</h2></span></a></li>
 

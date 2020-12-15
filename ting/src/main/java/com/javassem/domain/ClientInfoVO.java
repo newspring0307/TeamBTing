@@ -1,4 +1,7 @@
 package com.javassem.domain;
+
+import java.sql.Date;
+
 /*
 	clientIdx varchar2(30) NOT NULL,
     email varchar2(50),
@@ -11,7 +14,7 @@ public class ClientInfoVO {
 	private String email;
 	private String password;
 	private String phone;
-	private String regdate;
+	private Date regdate;
 	
 	@Override
 	public String toString() {
@@ -42,10 +45,10 @@ public class ClientInfoVO {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getRegdate() {
+	public Date getRegdate() {
 		return regdate;
 	}
-	public void setRegdate(String regdate) {
+	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
 	

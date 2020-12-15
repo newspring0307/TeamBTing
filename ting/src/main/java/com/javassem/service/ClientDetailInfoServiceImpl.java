@@ -12,9 +12,11 @@ import com.javassem.domain.ClientDetailInfoVO;
 @Service("clientDetailInfoService")
 public class ClientDetailInfoServiceImpl implements ClientDetailInfoService{
 
+	//dao불러오는곳
 	@Autowired
 	private ClientDetailInfoDAOImpl clientDetailInfoDAO;
 	
+	//메소드시작
 	public void insertClientDetailInfo(ClientDetailInfoVO vo) {
 
 		clientDetailInfoDAO.insertClientDetailInfo(vo);

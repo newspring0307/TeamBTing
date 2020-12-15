@@ -121,14 +121,14 @@
 					<div class="cnt">	
 						<h2>당신의 취향에 80% 부합해요!</h2>	
 						<h3 style="color:gray; ">( 90%이상이면 운명의 상대라는 소문이..?!)</h3>	
-						<h4 style="color:#ff5675">강아지상</h4>	
-						<h4 style="color:#ff5675">근육질</h4>	
-						<h4 style="color:#ff5675">대졸자</h4>	
-						<h4 style="color:#ff5675">가끔 마심</h4>	
-						<h4 style="color:#ff5675">비흡연자</h4>	
-						<h4 style="color:#ff5675">예의바름</h4>	
-				<form method="POST" action="insertLikeReceive">		
-						<input type="hidden" name="sendIdx" value="${clientDetailInfo.clientIdx}"/>
+						<h3 style="color:#ff5675;">강아지상</h3>	
+						<h3 style="color:#ff5675;">근육질</h3>	
+						<h3 style="color:#ff5675;">대졸자</h3>	
+						<h3 style="color:#ff5675">가끔 마심</h3>	
+						<h3 style="color:#ff5675">비흡연자</h3>	
+						<h3 style="color:#ff5675">예의바름</h3>	
+				<form method="POST" action="Client_2_Ting_result2">	
+						<input type="hidden" name="otherIdx" value="${clientDetailInfo.clientIdx}"/>
 			<input class="btn btn-lg" style="background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);color:#464646"value="좋아요 보내기" type="submit">
 				</form>
 					</div>

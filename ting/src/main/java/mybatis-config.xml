@@ -10,6 +10,8 @@
 		<typeAlias alias="clientDetailInfo" type="com.javassem.domain.ClientDetailInfoVO" />
 		<typeAlias alias="idealType" type="com.javassem.domain.IdealTypeVO" />	
 		<typeAlias alias="board" type="com.javassem.domain.TingBoardVO"/>
+		<typeAlias alias="likeReceive" type="com.javassem.domain.LikeReceiveVO"/>
+		<typeAlias alias="coupleDecision" type="com.javassem.domain.CoupleDecisionVO"/>
 	</typeAliases>
 	
 

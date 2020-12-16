@@ -44,7 +44,7 @@ public class ClientDetailInfoVO {
 				this.photo = file.getOriginalFilename();
 				
 				// 해당 경로로 변경
-					File f = new File("C:\\Users\\Kiha\\git\\TeamBTing_v1\\ting\\src\\main\\webapp\\resources\\img_photo\\"+ photo);
+					File f = new File("C:\\Users\\11\\git\\TeamBTing_v1\\ting\\src\\main\\webapp\\resources\\img_photo\\"+ photo);
 					//				File f = new File("D:\\다운로드\\workspace\\ws_03\\shoppingmall\\src\\main\\webapp\\resources\\upload\\"+ product_fname);
 				try {
 					System.out.println("사진시도");

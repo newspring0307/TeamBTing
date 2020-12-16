@@ -172,7 +172,7 @@
 	<script src="resources/js/google_map.js"></script>
 	<script src="resources/js/main.js"></script>
 	<script language="javascript">
-	function showPopup() { window.open("Premium_1_payment.jsp", "a", "width=600, height=800, left=650, top=100"); }
+	function showPopup() { window.open("Premium_1_payment", "a", "width=600, height=800, left=650, top=100"); }
 	</script> 
 
 	</body>

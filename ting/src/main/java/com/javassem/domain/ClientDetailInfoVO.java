@@ -9,8 +9,8 @@ public class ClientDetailInfoVO {
 	private String gender;
 	private String job;
 	private int age;
-	private int latitude;
-	private int longitude;
+	private Double latitude;
+	private Double longitude;
 	private String religion;
 	private String education;
 	private int height;
@@ -57,16 +57,16 @@ public class ClientDetailInfoVO {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public int getLatitude() {
+	public Double getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(int latitude) {
+	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
-	public int getLongitude() {
+	public Double getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(int longitude) {
+	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
 	}
 	public String getReligion() {
